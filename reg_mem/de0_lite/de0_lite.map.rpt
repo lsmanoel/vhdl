@@ -1,0 +1,536 @@
+Analysis & Synthesis report for de0_lite
+Sat May 18 10:37:23 2019
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: reg32n:reg32n_vhd
+ 11. Parameter Settings for User Entity Instance: sevenSeg:\hex_display_array:5:sevenSeg_vhd
+ 12. Parameter Settings for User Entity Instance: sevenSeg:\hex_display_array:4:sevenSeg_vhd
+ 13. Parameter Settings for User Entity Instance: sevenSeg:\hex_display_array:3:sevenSeg_vhd
+ 14. Parameter Settings for User Entity Instance: sevenSeg:\hex_display_array:2:sevenSeg_vhd
+ 15. Parameter Settings for User Entity Instance: sevenSeg:\hex_display_array:1:sevenSeg_vhd
+ 16. Parameter Settings for User Entity Instance: sevenSeg:\hex_display_array:0:sevenSeg_vhd
+ 17. Port Connectivity Checks: "reg32n:reg32n_vhd"
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat May 18 10:37:23 2019      ;
+; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
+; Revision Name                      ; de0_lite                                   ;
+; Top-level Entity Name              ; de0_lite                                   ;
+; Family                             ; MAX 10                                     ;
+; Total logic elements               ; 178                                        ;
+;     Total combinational functions  ; 79                                         ;
+;     Dedicated logic registers      ; 110                                        ;
+; Total registers                    ; 110                                        ;
+; Total pins                         ; 149                                        ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
+; UFM blocks                         ; 0                                          ;
+; ADC blocks                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                                      ; de0_lite           ; de0_lite           ;
+; Family name                                                                ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                   ; Library ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------+---------+
+; sevenSeg.vhd                     ; yes             ; User VHDL File        ; /home/lucas/vhdl/reg_mem/de0_lite/sevenSeg.vhd ;         ;
+; de0_lite.vhd                     ; yes             ; User VHDL File        ; /home/lucas/vhdl/reg_mem/de0_lite/de0_lite.vhd ;         ;
+; reg32n.vhd                       ; yes             ; Auto-Found VHDL File  ; /home/lucas/vhdl/reg_mem/de0_lite/reg32n.vhd   ;         ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                       ;
++---------------------------------------------+---------------------+
+; Resource                                    ; Usage               ;
++---------------------------------------------+---------------------+
+; Estimated Total logic elements              ; 178                 ;
+;                                             ;                     ;
+; Total combinational functions               ; 79                  ;
+; Logic element usage by number of LUT inputs ;                     ;
+;     -- 4 input functions                    ; 63                  ;
+;     -- 3 input functions                    ; 0                   ;
+;     -- <=2 input functions                  ; 16                  ;
+;                                             ;                     ;
+; Logic elements by mode                      ;                     ;
+;     -- normal mode                          ; 79                  ;
+;     -- arithmetic mode                      ; 0                   ;
+;                                             ;                     ;
+; Total registers                             ; 110                 ;
+;     -- Dedicated logic registers            ; 110                 ;
+;     -- I/O registers                        ; 0                   ;
+;                                             ;                     ;
+; I/O pins                                    ; 149                 ;
+;                                             ;                     ;
+; Embedded Multiplier 9-bit elements          ; 0                   ;
+;                                             ;                     ;
+; Maximum fan-out node                        ; MAX10_CLK1_50~input ;
+; Maximum fan-out                             ; 68                  ;
+; Total fan-out                               ; 798                 ;
+; Average fan-out                             ; 1.53                ;
++---------------------------------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                         ;
++-------------------------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                  ; Library Name ;
++-------------------------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------+--------------+
+; |de0_lite                                       ; 79 (0)            ; 110 (0)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 149  ; 0            ; 0          ; |de0_lite                                            ; work         ;
+;    |reg32n:reg32n_vhd|                          ; 72 (72)           ; 68 (68)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |de0_lite|reg32n:reg32n_vhd                          ; work         ;
+;    |sevenSeg:\hex_display_array:0:sevenSeg_vhd| ; 7 (7)             ; 7 (7)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |de0_lite|sevenSeg:\hex_display_array:0:sevenSeg_vhd ; work         ;
+;    |sevenSeg:\hex_display_array:1:sevenSeg_vhd| ; 0 (0)             ; 7 (7)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |de0_lite|sevenSeg:\hex_display_array:1:sevenSeg_vhd ; work         ;
+;    |sevenSeg:\hex_display_array:2:sevenSeg_vhd| ; 0 (0)             ; 7 (7)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |de0_lite|sevenSeg:\hex_display_array:2:sevenSeg_vhd ; work         ;
+;    |sevenSeg:\hex_display_array:3:sevenSeg_vhd| ; 0 (0)             ; 7 (7)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |de0_lite|sevenSeg:\hex_display_array:3:sevenSeg_vhd ; work         ;
+;    |sevenSeg:\hex_display_array:4:sevenSeg_vhd| ; 0 (0)             ; 7 (7)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |de0_lite|sevenSeg:\hex_display_array:4:sevenSeg_vhd ; work         ;
+;    |sevenSeg:\hex_display_array:5:sevenSeg_vhd| ; 0 (0)             ; 7 (7)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |de0_lite|sevenSeg:\hex_display_array:5:sevenSeg_vhd ; work         ;
++-------------------------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                             ;
++-------------------------------------------------------+----------------------------------------+
+; Register name                                         ; Reason for Removal                     ;
++-------------------------------------------------------+----------------------------------------+
+; sevenSeg:\hex_display_array:0:sevenSeg_vhd|SEG_OUT[0] ; Stuck at GND due to stuck port data_in ;
+; sevenSeg:\hex_display_array:1:sevenSeg_vhd|SEG_OUT[0] ; Stuck at GND due to stuck port data_in ;
+; sevenSeg:\hex_display_array:2:sevenSeg_vhd|SEG_OUT[0] ; Stuck at GND due to stuck port data_in ;
+; sevenSeg:\hex_display_array:3:sevenSeg_vhd|SEG_OUT[0] ; Stuck at GND due to stuck port data_in ;
+; sevenSeg:\hex_display_array:4:sevenSeg_vhd|SEG_OUT[0] ; Stuck at GND due to stuck port data_in ;
+; sevenSeg:\hex_display_array:5:sevenSeg_vhd|SEG_OUT[0] ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 6                 ;                                        ;
++-------------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 110   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 68    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg32n:reg32n_vhd ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; n              ; 32    ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sevenSeg:\hex_display_array:5:sevenSeg_vhd ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; display_mode   ; '0'   ; Enumerated                                                     ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sevenSeg:\hex_display_array:4:sevenSeg_vhd ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; display_mode   ; '0'   ; Enumerated                                                     ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sevenSeg:\hex_display_array:3:sevenSeg_vhd ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; display_mode   ; '0'   ; Enumerated                                                     ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sevenSeg:\hex_display_array:2:sevenSeg_vhd ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; display_mode   ; '0'   ; Enumerated                                                     ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sevenSeg:\hex_display_array:1:sevenSeg_vhd ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; display_mode   ; '0'   ; Enumerated                                                     ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sevenSeg:\hex_display_array:0:sevenSeg_vhd ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; display_mode   ; '0'   ; Enumerated                                                     ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reg32n:reg32n_vhd"                                                                              ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; data[31..4]      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; write_address[4] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; read_address[4]  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; q[31..4]         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 149                         ;
+; cycloneiii_ff         ; 110                         ;
+;     ENA               ; 68                          ;
+;     plain             ; 42                          ;
+; cycloneiii_io_obuf    ; 35                          ;
+; cycloneiii_lcell_comb ; 80                          ;
+;     normal            ; 80                          ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 16                          ;
+;         4 data inputs ; 63                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 1.81                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+    Info: Processing started: Sat May 18 10:37:06 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off de0_lite -c de0_lite
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file sevenSeg.vhd
+    Info (12022): Found design unit 1: sevenSeg-rtl
+    Info (12023): Found entity 1: sevenSeg
+Info (12021): Found 2 design units, including 1 entities, in source file de0_lite.vhd
+    Info (12022): Found design unit 1: de0_lite-rtl
+    Info (12023): Found entity 1: de0_lite
+Info (12127): Elaborating entity "de0_lite" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(22): used implicit default value for signal "DRAM_ADDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(23): used implicit default value for signal "DRAM_BA" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(24): used implicit default value for signal "DRAM_CAS_N" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(25): used implicit default value for signal "DRAM_CKE" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(26): used implicit default value for signal "DRAM_CLK" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(27): used implicit default value for signal "DRAM_CS_N" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(29): used implicit default value for signal "DRAM_LDQM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(30): used implicit default value for signal "DRAM_RAS_N" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(31): used implicit default value for signal "DRAM_UDQM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(32): used implicit default value for signal "RAM_WE_N" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(46): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(52): used implicit default value for signal "VGA_B" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(53): used implicit default value for signal "VGA_G" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(54): used implicit default value for signal "VGA_HS" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(55): used implicit default value for signal "VGA_R" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(56): used implicit default value for signal "VGA_VS" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(59): used implicit default value for signal "GSENSOR_CS_N" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(61): used implicit default value for signal "GSENSOR_SCLK" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(83): object "reg32n_clock" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(97): object "reg32n_q_unsigned" assigned a value but never read
+Warning (12125): Using design file reg32n.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: reg32n-rtl
+    Info (12023): Found entity 1: reg32n
+Info (12128): Elaborating entity "reg32n" for hierarchy "reg32n:reg32n_vhd"
+Info (12128): Elaborating entity "sevenSeg" for hierarchy "sevenSeg:\hex_display_array:5:sevenSeg_vhd"
+Info (276014): Found 7 instances of uninferred RAM logic
+    Info (276004): RAM logic "sevenSeg:\hex_display_array:0:sevenSeg_vhd|seven_seg_tab_1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "sevenSeg:\hex_display_array:1:sevenSeg_vhd|seven_seg_tab_1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "sevenSeg:\hex_display_array:2:sevenSeg_vhd|seven_seg_tab_1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "sevenSeg:\hex_display_array:3:sevenSeg_vhd|seven_seg_tab_1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "sevenSeg:\hex_display_array:4:sevenSeg_vhd|seven_seg_tab_1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "sevenSeg:\hex_display_array:5:sevenSeg_vhd|seven_seg_tab_1" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "reg32n:reg32n_vhd|ram_block" is uninferred due to inappropriate RAM size
+Warning (13039): The following bidirectional pins have no drivers
+    Warning (13040): bidirectional pin "DRAM_DQ[0]" has no driver
+    Warning (13040): bidirectional pin "DRAM_DQ[1]" has no driver
+    Warning (13040): bidirectional pin "DRAM_DQ[2]" has no driver
+    Warning (13040): bidirectional pin "DRAM_DQ[3]" has no driver
+    Warning (13040): bidirectional pin "DRAM_DQ[4]" has no driver
+    Warning (13040): bidirectional pin "DRAM_DQ[5]" has no driver
+    Warning (13040): bidirectional pin "DRAM_DQ[6]" has no driver
+    Warning (13040): bidirectional pin "DRAM_DQ[7]" has no driver
+    Warning (13040): bidirectional pin "DRAM_DQ[8]" has no driver
+    Warning (13040): bidirectional pin "DRAM_DQ[9]" has no driver
+    Warning (13040): bidirectional pin "DRAM_DQ[10]" has no driver
+    Warning (13040): bidirectional pin "DRAM_DQ[11]" has no driver
+    Warning (13040): bidirectional pin "DRAM_DQ[12]" has no driver
+    Warning (13040): bidirectional pin "DRAM_DQ[13]" has no driver
+    Warning (13040): bidirectional pin "DRAM_DQ[14]" has no driver
+    Warning (13040): bidirectional pin "DRAM_DQ[15]" has no driver
+    Warning (13040): bidirectional pin "GSENSOR_SDI" has no driver
+    Warning (13040): bidirectional pin "GSENSOR_SDO" has no driver
+    Warning (13040): bidirectional pin "ARDUINO_IO[0]" has no driver
+    Warning (13040): bidirectional pin "ARDUINO_IO[1]" has no driver
+    Warning (13040): bidirectional pin "ARDUINO_IO[2]" has no driver
+    Warning (13040): bidirectional pin "ARDUINO_IO[3]" has no driver
+    Warning (13040): bidirectional pin "ARDUINO_IO[4]" has no driver
+    Warning (13040): bidirectional pin "ARDUINO_IO[5]" has no driver
+    Warning (13040): bidirectional pin "ARDUINO_IO[6]" has no driver
+    Warning (13040): bidirectional pin "ARDUINO_IO[7]" has no driver
+    Warning (13040): bidirectional pin "ARDUINO_IO[8]" has no driver
+    Warning (13040): bidirectional pin "ARDUINO_IO[9]" has no driver
+    Warning (13040): bidirectional pin "ARDUINO_IO[10]" has no driver
+    Warning (13040): bidirectional pin "ARDUINO_IO[11]" has no driver
+    Warning (13040): bidirectional pin "ARDUINO_IO[12]" has no driver
+    Warning (13040): bidirectional pin "ARDUINO_IO[13]" has no driver
+    Warning (13040): bidirectional pin "ARDUINO_IO[14]" has no driver
+    Warning (13040): bidirectional pin "ARDUINO_IO[15]" has no driver
+    Warning (13040): bidirectional pin "ARDUINO_RESET_N" has no driver
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "DRAM_ADDR[0]" is stuck at GND
+    Warning (13410): Pin "DRAM_ADDR[1]" is stuck at GND
+    Warning (13410): Pin "DRAM_ADDR[2]" is stuck at GND
+    Warning (13410): Pin "DRAM_ADDR[3]" is stuck at GND
+    Warning (13410): Pin "DRAM_ADDR[4]" is stuck at GND
+    Warning (13410): Pin "DRAM_ADDR[5]" is stuck at GND
+    Warning (13410): Pin "DRAM_ADDR[6]" is stuck at GND
+    Warning (13410): Pin "DRAM_ADDR[7]" is stuck at GND
+    Warning (13410): Pin "DRAM_ADDR[8]" is stuck at GND
+    Warning (13410): Pin "DRAM_ADDR[9]" is stuck at GND
+    Warning (13410): Pin "DRAM_ADDR[10]" is stuck at GND
+    Warning (13410): Pin "DRAM_ADDR[11]" is stuck at GND
+    Warning (13410): Pin "DRAM_ADDR[12]" is stuck at GND
+    Warning (13410): Pin "DRAM_BA[0]" is stuck at GND
+    Warning (13410): Pin "DRAM_BA[1]" is stuck at GND
+    Warning (13410): Pin "DRAM_CAS_N" is stuck at GND
+    Warning (13410): Pin "DRAM_CKE" is stuck at GND
+    Warning (13410): Pin "DRAM_CLK" is stuck at GND
+    Warning (13410): Pin "DRAM_CS_N" is stuck at GND
+    Warning (13410): Pin "DRAM_LDQM" is stuck at GND
+    Warning (13410): Pin "DRAM_RAS_N" is stuck at GND
+    Warning (13410): Pin "DRAM_UDQM" is stuck at GND
+    Warning (13410): Pin "RAM_WE_N" is stuck at GND
+    Warning (13410): Pin "HEX0[0]" is stuck at GND
+    Warning (13410): Pin "HEX1[0]" is stuck at GND
+    Warning (13410): Pin "HEX2[0]" is stuck at GND
+    Warning (13410): Pin "HEX3[0]" is stuck at GND
+    Warning (13410): Pin "HEX4[0]" is stuck at GND
+    Warning (13410): Pin "HEX5[0]" is stuck at GND
+    Warning (13410): Pin "LEDR[0]" is stuck at GND
+    Warning (13410): Pin "LEDR[1]" is stuck at GND
+    Warning (13410): Pin "LEDR[2]" is stuck at GND
+    Warning (13410): Pin "LEDR[3]" is stuck at GND
+    Warning (13410): Pin "LEDR[4]" is stuck at GND
+    Warning (13410): Pin "LEDR[5]" is stuck at GND
+    Warning (13410): Pin "LEDR[6]" is stuck at GND
+    Warning (13410): Pin "LEDR[7]" is stuck at GND
+    Warning (13410): Pin "LEDR[8]" is stuck at GND
+    Warning (13410): Pin "LEDR[9]" is stuck at GND
+    Warning (13410): Pin "VGA_B[0]" is stuck at GND
+    Warning (13410): Pin "VGA_B[1]" is stuck at GND
+    Warning (13410): Pin "VGA_B[2]" is stuck at GND
+    Warning (13410): Pin "VGA_B[3]" is stuck at GND
+    Warning (13410): Pin "VGA_G[0]" is stuck at GND
+    Warning (13410): Pin "VGA_G[1]" is stuck at GND
+    Warning (13410): Pin "VGA_G[2]" is stuck at GND
+    Warning (13410): Pin "VGA_G[3]" is stuck at GND
+    Warning (13410): Pin "VGA_HS" is stuck at GND
+    Warning (13410): Pin "VGA_R[0]" is stuck at GND
+    Warning (13410): Pin "VGA_R[1]" is stuck at GND
+    Warning (13410): Pin "VGA_R[2]" is stuck at GND
+    Warning (13410): Pin "VGA_R[3]" is stuck at GND
+    Warning (13410): Pin "VGA_VS" is stuck at GND
+    Warning (13410): Pin "GSENSOR_CS_N" is stuck at GND
+    Warning (13410): Pin "GSENSOR_SCLK" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 6 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "ADC_CLK_10"
+    Warning (15610): No output dependent on input pin "MAX10_CLK2_50"
+    Warning (15610): No output dependent on input pin "KEY[0]"
+    Warning (15610): No output dependent on input pin "KEY[1]"
+    Warning (15610): No output dependent on input pin "GSENSOR_INT[1]"
+    Warning (15610): No output dependent on input pin "GSENSOR_INT[2]"
+Info (21057): Implemented 334 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 97 output pins
+    Info (21060): Implemented 35 bidirectional pins
+    Info (21061): Implemented 185 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 121 warnings
+    Info: Peak virtual memory: 987 megabytes
+    Info: Processing ended: Sat May 18 10:37:23 2019
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:39
+
+

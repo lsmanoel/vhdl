@@ -1,0 +1,13 @@
+ls
+# db
+# incremental_db
+# output_files
+# seven_seg.qpf
+# seven_seg.qsf
+# seven_seg.qws
+# sevenSeg.vhd
+# sevenSeg.vhd.bak
+# simulation
+# tb_sevenSeg.do
+# tb_sevenSeg.vhd
+# transcript
