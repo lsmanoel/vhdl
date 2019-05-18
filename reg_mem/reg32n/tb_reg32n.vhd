@@ -2,10 +2,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity tb_reg3232 is
+entity tb_reg32n is
 end entity;
 
-architecture waveform of tb_reg3232 is
+architecture waveform of tb_reg32n is
 	-------------------------------------------------------------------
 	-- CLOCK
 	signal clock_50_0_logic, clock_50_PI_logic: std_logic;
@@ -34,8 +34,9 @@ architecture waveform of tb_reg3232 is
 	signal q_logic_vector: std_logic_vector (31 downto 0);
 
 	-------------------------------------------------------------------
-	-- REG3232
-	component reg3232 is
+	-- REG32n
+	component reg32n is
+		generic (N:		integer);
 		port 	(CLOCK: 				in std_logic;
 				 DATA: 					in std_logic_vector (31 downto 0);
 				 WRITE_ADDRESS: 		in integer range 0 to 31;
@@ -44,22 +45,22 @@ architecture waveform of tb_reg3232 is
 				 Q:						out std_logic_vector (31 downto 0));
 	end component;
 
-	signal reg3232_clock_logic: std_logic;
-	signal reg3232_we_logic: std_logic;
+	signal reg32n_clock_logic: std_logic;
+	signal reg32n_we_logic: std_logic;
 
-	signal reg3232_data_unsigned: Unsigned(31 downto 0);
-	signal reg3232_data_logic_vector: std_logic_vector (31 downto 0);
+	signal reg32n_data_unsigned: Unsigned(31 downto 0);
+	signal reg32n_data_logic_vector: std_logic_vector (31 downto 0);
 
-	signal reg3232_write_address_integer: integer range 0 to 31;
-	signal reg3232_write_address_unsigned: Unsigned(31 downto 0);
-	signal reg3232_write_address_logic_vector: std_logic_vector(31 downto 0);
+	signal reg32n_write_address_integer: integer range 0 to 31;
+	signal reg32n_write_address_unsigned: Unsigned(31 downto 0);
+	signal reg32n_write_address_logic_vector: std_logic_vector(31 downto 0);
 
-	signal reg3232_read_address_integer: integer range 0 to 31;
-	signal reg3232_read_address_unsigned: Unsigned(31 downto 0);
-	signal reg3232_read_address_logic_vector: std_logic_vector (31 downto 0);
+	signal reg32n_read_address_integer: integer range 0 to 31;
+	signal reg32n_read_address_unsigned: Unsigned(31 downto 0);
+	signal reg32n_read_address_logic_vector: std_logic_vector (31 downto 0);
 
-	signal reg3232_q_unsigned: Unsigned(31 downto 0);
-	signal reg3232_q_logic_vector: std_logic_vector (31 downto 0);
+	signal reg32n_q_unsigned: Unsigned(31 downto 0);
+	signal reg32n_q_logic_vector: std_logic_vector (31 downto 0);
 
 begin
 	--===============================================================--
@@ -125,20 +126,21 @@ begin
 	q_integer <= To_integer(q_unsigned);
 
 	--===============================================================--
-	reg3232_vhd: reg3232
+	reg32n_vhd: reg32n
+		generic map (N 					=> 32)
 			port map (
-				CLOCK 					=> reg3232_clock_logic,
-				DATA 					=> reg3232_data_logic_vector,
-				WRITE_ADDRESS 			=> reg3232_write_address_integer,
-				READ_ADDRESS 			=> reg3232_read_address_integer,
-				WE 						=> reg3232_we_logic,
-				Q 						=> reg3232_q_logic_vector);
+				CLOCK 					=> reg32n_clock_logic,
+				DATA 					=> reg32n_data_logic_vector,
+				WRITE_ADDRESS 			=> reg32n_write_address_integer,
+				READ_ADDRESS 			=> reg32n_read_address_integer,
+				WE 						=> reg32n_we_logic,
+				Q 						=> reg32n_q_logic_vector);
 
-	reg3232_clock_logic <= clock_50_0_logic;
-	reg3232_data_logic_vector <= data_logic_vector; 
-	reg3232_write_address_integer <= w_address_integer;
-	reg3232_read_address_integer <= r_address_integer;
-	reg3232_we_logic <= we_logic;
-	q_logic_vector <= reg3232_q_logic_vector;
+	reg32n_clock_logic <= clock_50_0_logic;
+	reg32n_data_logic_vector <= data_logic_vector; 
+	reg32n_write_address_integer <= w_address_integer;
+	reg32n_read_address_integer <= r_address_integer;
+	reg32n_we_logic <= we_logic;
+	q_logic_vector <= reg32n_q_logic_vector;
 
 end architecture;

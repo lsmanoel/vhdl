@@ -2,13 +2,11 @@
 vlib work
 
 #Compila Projeto
-vcom reg3232.vhd
-vcom sevenSeg.vhd
-vcom de0_lite.vhd
-vcom tb_de0_lite.vhd
+vcom reg32n.vhd
+vcom tb_reg32n.vhd
 
 #Simula
-vsim -t ns work.tb_de0_lite
+vsim -t ns work.tb_reg32n
 
 #Mosta forma de onda
 view wave
@@ -18,35 +16,14 @@ view wave
 #label: nome da forma de onda
 
 #------------------------------------------------------------------------------------------
-#add wave -radix binary -label clocl_adc_10 /adc_clk_10
-#add wave -radix binary -label clocl_1_50 /max10_clk1_50
-#add wave -radix binary -label clocl_2_50 /max10_clk2_50
+add wave -radix binary -label reg32n_clock_logic /reg32n_clock_logic
 
 #------------------------------------------------------------------------------------------
-add wave -radix hex -label sw_3_downto_0 /de0_lite_vhd/sw(3:0)
-add wave -radix dec -color orange -label reg32n_data_logic_vector /de0_lite_vhd/reg32n_data_logic_vector
-
-add wave -radix hex -label sw_7_downto_4 /de0_lite_vhd/sw(7:4)
-add wave -radix dec -color orange -label reg32n_write_addreshex /de0_lite_vhd/reg32n_write_address_integer
-add wave -radix dec -color orange -label reg32n_read_addresshex /de0_lite_vhd/reg32n_read_address_integer
-
-add wave -radix binary -label sw_8 /de0_lite_vhd/sw(8)
-add wave -radix binary -label sw_9 /de0_lite_vhd/sw(9)
-
-#------------------------------------------------------------------------------------------
-#add wave -radix dec -label sevenSeg_seg_in_0 /de0_lite_vhd/sevenSeg_seg_in(0)
-#add wave -radix dec -label sevenSeg_seg_in_1 /de0_lite_vhd/sevenSeg_seg_in(1)
-#add wave -radix dec -label sevenSeg_seg_in_2 /de0_lite_vhd/sevenSeg_seg_in(2)
-#add wave -radix dec -label sevenSeg_seg_in_3 /de0_lite_vhd/sevenSeg_seg_in(3)
-#add wave -radix dec -label sevenSeg_seg_in_4 /de0_lite_vhd/sevenSeg_seg_in(4)
-#add wave -radix dec -label sevenSeg_seg_in_5 /de0_lite_vhd/sevenSeg_seg_in(5)
-
-#add wave -radix binary -label hex0 /de0_lite_vhd/hex0
-#add wave -radix binary -label hex1 /de0_lite_vhd/hex1
-#add wave -radix binary -label hex2 /de0_lite_vhd/hex2
-#add wave -radix binary -label hex3 /de0_lite_vhd/hex3
-#add wave -radix binary -label hex4 /de0_lite_vhd/hex4
-#add wave -radix binary -label hex5 /de0_lite_vhd/hex5
+add wave -radix hex -label data_logic_vector /data_logic_vector
+add wave -radix dec -label w_address_integer /w_address_integer
+add wave -radix dec -label r_address_integer /r_address_integer
+add wave -radix hex -label we_logic /we_logic
+add wave -radix hex -label reg32n_q_logic_vector /reg32n_q_logic_vector
 
 #------------------------------------------------------------------------------------------
 run 1000ns
