@@ -18,8 +18,8 @@ architecture waveform of tb_reg32n is
 
 	-------------------------------------------------------------------
 	-- WR_ADDRESS
-	signal w_address_integer: integer range 0 to 31;
-	signal r_address_integer: integer range 0 to 31;
+	signal write_address_integer: integer range 0 to 31;
+	signal read_address_integer: integer range 0 to 31;
 	signal wr_address_unsigned: Unsigned (9 downto 0);
 	signal wr_address_logic_vector: std_logic_vector (9 downto 0);
 
@@ -46,20 +46,23 @@ architecture waveform of tb_reg32n is
 	end component;
 
 	signal reg32n_clock_logic: std_logic;
-	signal reg32n_we_logic: std_logic;
 
-	signal reg32n_data_unsigned: Unsigned(31 downto 0);
+	signal reg32n_data_integer: integer;
+	signal reg32n_data_unsigned: Unsigned (31 downto 0);
 	signal reg32n_data_logic_vector: std_logic_vector (31 downto 0);
 
 	signal reg32n_write_address_integer: integer range 0 to 31;
-	signal reg32n_write_address_unsigned: Unsigned(31 downto 0);
-	signal reg32n_write_address_logic_vector: std_logic_vector(31 downto 0);
+	signal reg32n_write_address_unsigned: Unsigned (4 downto 0);
+	signal reg32n_write_address_logic_vector: std_logic_vector(4 downto 0);
 
 	signal reg32n_read_address_integer: integer range 0 to 31;
-	signal reg32n_read_address_unsigned: Unsigned(31 downto 0);
-	signal reg32n_read_address_logic_vector: std_logic_vector (31 downto 0);
+	signal reg32n_read_address_unsigned: Unsigned (4 downto 0);
+	signal reg32n_read_address_logic_vector: std_logic_vector (4 downto 0);
+	
+	signal reg32n_we_logic: std_logic;
 
-	signal reg32n_q_unsigned: Unsigned(31 downto 0);
+	signal reg32n_q_integer: integer;
+	signal reg32n_q_unsigned: Unsigned (31 downto 0);
 	signal reg32n_q_logic_vector: std_logic_vector (31 downto 0);
 
 begin
@@ -84,15 +87,15 @@ begin
 	--===============================================================--
 	-- WR_ADDRESS: process
 	-- begin
-	-- 	w_address_integer <= w_address_integer + 1;
-	-- 	r_address_integer <= r_address_integer + 1;
+	-- 	write_address_integer <= write_address_integer + 1;
+	-- 	read_address_integer <= read_address_integer + 1;
 	-- 	wait for 10 ns;
 	-- end process;
 
-	w_address_integer <= 1;
-	r_address_integer <= 1;
+	write_address_integer <= 1;
+	read_address_integer <= 1;
 
-	wr_address_unsigned <= To_unsigned(w_address_integer, 5)&To_unsigned(r_address_integer, 5);	
+	wr_address_unsigned <= To_unsigned(write_address_integer, 5)&To_unsigned(read_address_integer, 5);	
 	wr_address_logic_vector	<= Std_logic_vector(wr_address_unsigned);
 
 	--===============================================================--
@@ -127,20 +130,39 @@ begin
 
 	--===============================================================--
 	reg32n_vhd: reg32n
-		generic map (N 					=> 32)
-			port map (
-				CLOCK 					=> reg32n_clock_logic,
-				DATA 					=> reg32n_data_logic_vector,
-				WRITE_ADDRESS 			=> reg32n_write_address_integer,
-				READ_ADDRESS 			=> reg32n_read_address_integer,
-				WE 						=> reg32n_we_logic,
-				Q 						=> reg32n_q_logic_vector);
+		generic map (N 			=> 32)
+		port map (
+			CLOCK 				=> reg32n_clock_logic,
+			DATA 				=> reg32n_data_logic_vector,
+			WRITE_ADDRESS 		=> reg32n_write_address_integer,
+			READ_ADDRESS 		=> reg32n_read_address_integer,
+			WE 					=> reg32n_we_logic,
+			Q 					=> reg32n_q_logic_vector);
 
+	
+	reg32n_data_unsigned <= Unsigned(reg32n_data_logic_vector);
+	reg32n_data_integer <= To_integer(reg32n_data_unsigned);
+
+	reg32n_write_address_unsigned <= To_unsigned(reg32n_write_address_integer, 5);
+	reg32n_write_address_logic_vector <= Std_logic_vector(reg32n_write_address_unsigned);
+
+	reg32n_read_address_unsigned <= To_unsigned(reg32n_read_address_integer, 5);
+	reg32n_read_address_logic_vector <= Std_logic_vector(reg32n_read_address_unsigned);
+
+	reg32n_q_unsigned <= Unsigned(reg32n_q_logic_vector);
+	reg32n_q_integer <= To_integer(reg32n_q_unsigned);
+
+	--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&--
 	reg32n_clock_logic <= clock_50_0_logic;
+
 	reg32n_data_logic_vector <= data_logic_vector; 
-	reg32n_write_address_integer <= w_address_integer;
-	reg32n_read_address_integer <= r_address_integer;
+
+	reg32n_write_address_integer <= write_address_integer;
+
+	reg32n_read_address_integer <= read_address_integer;
+
 	reg32n_we_logic <= we_logic;
+
 	q_logic_vector <= reg32n_q_logic_vector;
 
 end architecture;

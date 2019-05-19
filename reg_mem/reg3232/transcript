@@ -2684,3 +2684,885 @@ do tb.do
 # 0 ns
 # 1050 ns
 # printing wave to file wave.ps
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:35:13 on May 18,2019
+# vcom -reportprogress 300 reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg32n
+# -- Compiling architecture rtl of reg32n
+# End time: 20:35:13 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:35:13 on May 18,2019
+# vcom -reportprogress 300 tb_reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_reg32n
+# -- Compiling architecture waveform of tb_reg32n
+# End time: 20:35:13 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 20:35:13 on May 18,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_reg32n(waveform)
+# Loading work.reg32n(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -2 is out of NATURAL range 0 to 2147483647.
+#    Time: 66 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -3 is out of NATURAL range 0 to 2147483647.
+#    Time: 132 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -4 is out of NATURAL range 0 to 2147483647.
+#    Time: 198 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -5 is out of NATURAL range 0 to 2147483647.
+#    Time: 264 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -6 is out of NATURAL range 0 to 2147483647.
+#    Time: 330 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -7 is out of NATURAL range 0 to 2147483647.
+#    Time: 396 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -8 is out of NATURAL range 0 to 2147483647.
+#    Time: 462 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -9 is out of NATURAL range 0 to 2147483647.
+#    Time: 528 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -10 is out of NATURAL range 0 to 2147483647.
+#    Time: 594 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -11 is out of NATURAL range 0 to 2147483647.
+#    Time: 660 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -12 is out of NATURAL range 0 to 2147483647.
+#    Time: 726 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -13 is out of NATURAL range 0 to 2147483647.
+#    Time: 792 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -14 is out of NATURAL range 0 to 2147483647.
+#    Time: 858 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -15 is out of NATURAL range 0 to 2147483647.
+#    Time: 924 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -16 is out of NATURAL range 0 to 2147483647.
+#    Time: 990 ns  Iteration: 1  Instance: /tb_reg32n
+# 0 ns
+# 1050 ns
+# printing wave to file wave.ps
+quit -sim
+cd /home/lucas/vhdl/reg_mem/reg32n
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:49:50 on May 18,2019
+# vcom -reportprogress 300 reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg32n
+# -- Compiling architecture rtl of reg32n
+# End time: 21:49:50 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:49:50 on May 18,2019
+# vcom -reportprogress 300 tb_reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_reg32n
+# -- Compiling architecture waveform of tb_reg32n
+# ** Error: tb_reg32n.vhd(143): near ":": expecting ';'
+# ** Error: tb_reg32n.vhd(146): (vcom-1136) Unknown identifier "reg32n_write_integer".
+# ** Error: tb_reg32n.vhd(147): near ":": expecting ';'
+# ** Error: tb_reg32n.vhd(150): near ":": expecting ';'
+# ** Error: tb_reg32n.vhd(168): VHDL Compiler exiting
+# End time: 21:49:50 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_reg32n.vhd"
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:50:06 on May 18,2019
+# vcom -reportprogress 300 reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg32n
+# -- Compiling architecture rtl of reg32n
+# End time: 21:50:06 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:50:06 on May 18,2019
+# vcom -reportprogress 300 tb_reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_reg32n
+# -- Compiling architecture waveform of tb_reg32n
+# ** Error: tb_reg32n.vhd(146): (vcom-1136) Unknown identifier "reg32n_write_integer".
+# ** Error: tb_reg32n.vhd(147): near ":": expecting ';'
+# ** Error: tb_reg32n.vhd(150): near ":": expecting ';'
+# ** Error: tb_reg32n.vhd(168): VHDL Compiler exiting
+# End time: 21:50:06 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_reg32n.vhd"
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:50:47 on May 18,2019
+# vcom -reportprogress 300 reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg32n
+# -- Compiling architecture rtl of reg32n
+# End time: 21:50:47 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:50:47 on May 18,2019
+# vcom -reportprogress 300 tb_reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_reg32n
+# -- Compiling architecture waveform of tb_reg32n
+# ** Error: tb_reg32n.vhd(146): (vcom-1136) Unknown identifier "reg32n_write_integer".
+# ** Error: tb_reg32n.vhd(149): (vcom-1136) Unknown identifier "reg32n_read_integer".
+# ** Error: tb_reg32n.vhd(168): VHDL Compiler exiting
+# End time: 21:50:47 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_reg32n.vhd"
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:52:54 on May 18,2019
+# vcom -reportprogress 300 reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg32n
+# -- Compiling architecture rtl of reg32n
+# End time: 21:52:54 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:52:54 on May 18,2019
+# vcom -reportprogress 300 tb_reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_reg32n
+# -- Compiling architecture waveform of tb_reg32n
+# ** Error: tb_reg32n.vhd(149): (vcom-1136) Unknown identifier "reg32n_read_integer".
+# ** Error: tb_reg32n.vhd(146): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Error: tb_reg32n.vhd(168): VHDL Compiler exiting
+# End time: 21:52:54 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_reg32n.vhd"
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:53:29 on May 18,2019
+# vcom -reportprogress 300 reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg32n
+# -- Compiling architecture rtl of reg32n
+# End time: 21:53:29 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 21:53:29 on May 18,2019
+# vcom -reportprogress 300 tb_reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_reg32n
+# -- Compiling architecture waveform of tb_reg32n
+# ** Error: tb_reg32n.vhd(146): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Error: tb_reg32n.vhd(149): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Error: tb_reg32n.vhd(168): VHDL Compiler exiting
+# End time: 21:53:29 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_reg32n.vhd"
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:18:20 on May 18,2019
+# vcom -reportprogress 300 reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg32n
+# -- Compiling architecture rtl of reg32n
+# End time: 22:18:20 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:18:20 on May 18,2019
+# vcom -reportprogress 300 tb_reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_reg32n
+# -- Compiling architecture waveform of tb_reg32n
+# ** Error: tb_reg32n.vhd(146): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Error: tb_reg32n.vhd(149): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Error: tb_reg32n.vhd(168): VHDL Compiler exiting
+# End time: 22:18:20 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_reg32n.vhd"
+ls
+# reg32n.vhd
+# tb.do
+# tb_reg32n.vhd
+# vsim.wlf
+# wave.ps
+# work
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:20:43 on May 18,2019
+# vcom -reportprogress 300 reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg32n
+# -- Compiling architecture rtl of reg32n
+# End time: 22:20:43 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:20:43 on May 18,2019
+# vcom -reportprogress 300 tb_reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_reg32n
+# -- Compiling architecture waveform of tb_reg32n
+# End time: 22:20:43 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 22:20:43 on May 18,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_reg32n(waveform)
+# Loading work.reg32n(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Error: (vish-4014) No objects found matching '/w_address_integer'.
+# Error in macro ./tb.do line 23
+# (vish-4014) No objects found matching '/w_address_integer'.
+#     while executing
+# "add wave -radix dec -label w_address_integer /w_address_integer"
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:21:48 on May 18,2019
+# vcom -reportprogress 300 reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg32n
+# -- Compiling architecture rtl of reg32n
+# End time: 22:21:48 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:21:48 on May 18,2019
+# vcom -reportprogress 300 tb_reg32n.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_reg32n
+# -- Compiling architecture waveform of tb_reg32n
+# End time: 22:21:48 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 22:21:49 on May 18,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_reg32n(waveform)
+# Loading work.reg32n(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_reg32n
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_reg32n
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -2 is out of NATURAL range 0 to 2147483647.
+#    Time: 66 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -3 is out of NATURAL range 0 to 2147483647.
+#    Time: 132 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -4 is out of NATURAL range 0 to 2147483647.
+#    Time: 198 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -5 is out of NATURAL range 0 to 2147483647.
+#    Time: 264 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -6 is out of NATURAL range 0 to 2147483647.
+#    Time: 330 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -7 is out of NATURAL range 0 to 2147483647.
+#    Time: 396 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -8 is out of NATURAL range 0 to 2147483647.
+#    Time: 462 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -9 is out of NATURAL range 0 to 2147483647.
+#    Time: 528 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -10 is out of NATURAL range 0 to 2147483647.
+#    Time: 594 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -11 is out of NATURAL range 0 to 2147483647.
+#    Time: 660 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -12 is out of NATURAL range 0 to 2147483647.
+#    Time: 726 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -13 is out of NATURAL range 0 to 2147483647.
+#    Time: 792 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -14 is out of NATURAL range 0 to 2147483647.
+#    Time: 858 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -15 is out of NATURAL range 0 to 2147483647.
+#    Time: 924 ns  Iteration: 1  Instance: /tb_reg32n
+# ** Error: (vsim-86) Arg Value -16 is out of NATURAL range 0 to 2147483647.
+#    Time: 990 ns  Iteration: 1  Instance: /tb_reg32n
+# 0 ns
+# 1050 ns
+# printing wave to file wave.ps
+quit -sim
+cd /home/lucas/vhdl/reg_mem/sevenSeg
+ls
+# db
+# incremental_db
+# output_files
+# seven_seg.qpf
+# seven_seg.qsf
+# seven_seg.qws
+# sevenSeg.vhd
+# sevenSeg.vhd.bak
+# simulation
+# tb.do
+# tb_sevenSeg.do
+# tb_sevenSeg.vhd
+# transcript
+do tb.do
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:35:01 on May 18,2019
+# vcom -reportprogress 300 sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSeg
+# -- Compiling architecture rtl of sevenSeg
+# ** Error: sevenSeg.vhd(24): (vcom-1294) Declaration with designator "sevenSeg_tab" already exists in this region.
+# ** =====> Prior declaration of "sevenSeg_tab" is at sevenSeg.vhd(12).
+# ** Error: sevenSeg.vhd(28): VHDL Compiler exiting
+# End time: 22:35:01 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb.do line 5
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom sevenSeg.vhd"
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:36:47 on May 18,2019
+# vcom -reportprogress 300 sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSeg
+# -- Compiling architecture rtl of sevenSeg
+# ** Error: sevenSeg.vhd(13): (vcom-1136) Unknown identifier "sevenSeg_tab".
+# ** Error: sevenSeg.vhd(24): (vcom-1294) Declaration with designator "sevenSeg_out_array_logic_vector" already exists in this region.
+# ** =====> Prior declaration of "sevenSeg_out_array_logic_vector" is at sevenSeg.vhd(12).
+# ** Error: sevenSeg.vhd(26): (vcom-1136) Unknown identifier "sevenSeg_tab".
+# ** Error: sevenSeg.vhd(27): (vcom-1136) Unknown identifier "sevenSeg_tab".
+# ** Error: sevenSeg.vhd(27): Type error resolving prefix expression "not" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: sevenSeg.vhd(28): VHDL Compiler exiting
+# End time: 22:36:47 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb.do line 5
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom sevenSeg.vhd"
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:37:17 on May 18,2019
+# vcom -reportprogress 300 sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSeg
+# -- Compiling architecture rtl of sevenSeg
+# End time: 22:37:17 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:37:17 on May 18,2019
+# vcom -reportprogress 300 tb_sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSeg
+# -- Compiling architecture waveform of tb_sevenSeeg
+# ** Error: (vcom-11) Could not find work.tb_sevenseeg.
+# ** Error: tb_sevenSeg.vhd(8): VHDL Compiler exiting
+# End time: 22:37:17 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_sevenSeg.vhd"
+ls
+# db
+# incremental_db
+# output_files
+# seven_seg.qpf
+# seven_seg.qsf
+# seven_seg.qws
+# sevenSeg.vhd
+# sevenSeg.vhd.bak
+# simulation
+# tb.do
+# tb_sevenSeg.do
+# tb_sevenSeg.vhd
+# transcript
+# work
+cd ..
+ls
+# de0_lite
+# reg3232
+# reg32n
+# requisitos_1.md
+# sevenSeg
+cd ..
+ls
+# reg_mem
+cd ..
+ls
+# Área de trabalho
+# CLionProjects
+# Documentos
+# Documents
+# Downloads
+# Imagens
+# java_error_in_PYCHARM_23620.log
+# Modelos
+# Música
+# OpenCV
+# Público
+# SoftMaker
+# ssd1
+# ssd2
+# systemC
+# transcript
+# unetbootin
+# vhdl
+# vhdl_old
+# Vídeos
+# win
+# workspaceSigasi
+# YAKINDU_SCTPRO
+cd vhdl
+ls
+# reg_mem
+cd reg_mem
+ls
+# de0_lite
+# reg3232
+# reg32n
+# requisitos_1.md
+# sevenSeg
+cd sevenSeg
+ls
+# db
+# incremental_db
+# output_files
+# seven_seg.qpf
+# seven_seg.qsf
+# seven_seg.qws
+# sevenSeg.vhd
+# sevenSeg.vhd.bak
+# simulation
+# tb.do
+# tb_sevenSeg.do
+# tb_sevenSeg.vhd
+# transcript
+# work
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:39:31 on May 18,2019
+# vcom -reportprogress 300 sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSeg
+# -- Compiling architecture rtl of sevenSeg
+# End time: 22:39:31 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:39:31 on May 18,2019
+# vcom -reportprogress 300 tb_sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSeg
+# -- Compiling architecture waveform of tb_sevenSeeg
+# ** Error: (vcom-11) Could not find work.tb_sevenseeg.
+# ** Error: tb_sevenSeg.vhd(8): VHDL Compiler exiting
+# End time: 22:39:31 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_sevenSeg.vhd"
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:39:58 on May 18,2019
+# vcom -reportprogress 300 sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSeg
+# -- Compiling architecture rtl of sevenSeg
+# End time: 22:39:58 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:39:58 on May 18,2019
+# vcom -reportprogress 300 tb_sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSeg
+# -- Compiling architecture waveform of tb_sevenSeg
+# ** Error: tb_sevenSeg.vhd(60): (vcom-1272) Length of formal "DATA" is 4; length of actual is 32.
+# ** Error: tb_sevenSeg.vhd(61): (vcom-1272) Length of formal "Q" is 7; length of actual is 32.
+# ** Error: tb_sevenSeg.vhd(74): VHDL Compiler exiting
+# End time: 22:39:58 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_sevenSeg.vhd"
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:43:38 on May 18,2019
+# vcom -reportprogress 300 sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSeg
+# -- Compiling architecture rtl of sevenSeg
+# End time: 22:43:38 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:43:38 on May 18,2019
+# vcom -reportprogress 300 tb_sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSeg
+# -- Compiling architecture waveform of tb_sevenSeg
+# End time: 22:43:38 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 22:43:38 on May 18,2019
+# ** Error: (vsim-3170) Could not find '/home/lucas/vhdl/reg_mem/sevenSeg/work.tb_de0_lite'.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./tb.do PAUSED at line 9
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:46:07 on May 18,2019
+# vcom -reportprogress 300 sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSeg
+# -- Compiling architecture rtl of sevenSeg
+# End time: 22:46:07 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:46:07 on May 18,2019
+# vcom -reportprogress 300 tb_sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSeg
+# -- Compiling architecture waveform of tb_sevenSeg
+# End time: 22:46:07 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevenseg(waveform)
+# Loading work.sevenseg(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg/sevenSeg_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -2 is out of NATURAL range 0 to 2147483647.
+#    Time: 66 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -3 is out of NATURAL range 0 to 2147483647.
+#    Time: 132 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -4 is out of NATURAL range 0 to 2147483647.
+#    Time: 198 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -5 is out of NATURAL range 0 to 2147483647.
+#    Time: 264 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -6 is out of NATURAL range 0 to 2147483647.
+#    Time: 330 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -7 is out of NATURAL range 0 to 2147483647.
+#    Time: 396 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -8 is out of NATURAL range 0 to 2147483647.
+#    Time: 462 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -9 is out of NATURAL range 0 to 2147483647.
+#    Time: 528 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -10 is out of NATURAL range 0 to 2147483647.
+#    Time: 594 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Fatal: (vsim-3734) Index value 10 is out of range 9 downto 0.
+#    Time: 594 ns  Iteration: 4  Process: /tb_sevenseg/sevenSeg_vhd/line__26 File: sevenSeg.vhd
+# Fatal error in Architecture rtl at sevenSeg.vhd line 27
+# 
+# HDL call sequence:
+# Stopped at sevenSeg.vhd 27 Architecture rtl
+# 
+# 0 ns
+# 624 ns
+# printing wave to file wave.ps
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:46:27 on May 18,2019
+# vcom -reportprogress 300 sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSeg
+# -- Compiling architecture rtl of sevenSeg
+# End time: 22:46:27 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:46:27 on May 18,2019
+# vcom -reportprogress 300 tb_sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSeg
+# -- Compiling architecture waveform of tb_sevenSeg
+# End time: 22:46:27 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 22:46:27 on May 18,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevenseg(waveform)
+# Loading work.sevenseg(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg/sevenSeg_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -1 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -2 is out of NATURAL range 0 to 2147483647.
+#    Time: 66 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -3 is out of NATURAL range 0 to 2147483647.
+#    Time: 132 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -4 is out of NATURAL range 0 to 2147483647.
+#    Time: 198 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -5 is out of NATURAL range 0 to 2147483647.
+#    Time: 264 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -6 is out of NATURAL range 0 to 2147483647.
+#    Time: 330 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -7 is out of NATURAL range 0 to 2147483647.
+#    Time: 396 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -8 is out of NATURAL range 0 to 2147483647.
+#    Time: 462 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -9 is out of NATURAL range 0 to 2147483647.
+#    Time: 528 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Error: (vsim-86) Arg Value -10 is out of NATURAL range 0 to 2147483647.
+#    Time: 594 ns  Iteration: 1  Instance: /tb_sevenseg
+# ** Fatal: (vsim-3734) Index value 10 is out of range 9 downto 0.
+#    Time: 594 ns  Iteration: 4  Process: /tb_sevenseg/sevenSeg_vhd/line__26 File: sevenSeg.vhd
+# Fatal error in Architecture rtl at sevenSeg.vhd line 27
+# 
+# HDL call sequence:
+# Stopped at sevenSeg.vhd 27 Architecture rtl
+# 
+# 0 ns
+# 624 ns
+# printing wave to file wave.ps
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:47:15 on May 18,2019
+# vcom -reportprogress 300 sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSeg
+# -- Compiling architecture rtl of sevenSeg
+# End time: 22:47:15 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:47:15 on May 18,2019
+# vcom -reportprogress 300 tb_sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSeg
+# -- Compiling architecture waveform of tb_sevenSeg
+# End time: 22:47:15 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 22:47:15 on May 18,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevenseg(waveform)
+# Loading work.sevenseg(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg/sevenSeg_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg
+# 0 ns
+# 1050 ns
+# printing wave to file wave.ps
+do tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:48:14 on May 18,2019
+# vcom -reportprogress 300 sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSeg
+# -- Compiling architecture rtl of sevenSeg
+# End time: 22:48:14 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:48:14 on May 18,2019
+# vcom -reportprogress 300 tb_sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSeg
+# -- Compiling architecture waveform of tb_sevenSeg
+# End time: 22:48:14 on May 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 22:48:14 on May 18,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevenseg(waveform)
+# Loading work.sevenseg(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg/sevenSeg_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg
+# 0 ns
+# 1050 ns
+# printing wave to file wave.ps

@@ -20,8 +20,8 @@ add wave -radix binary -label reg32n_clock_logic /reg32n_clock_logic
 
 #------------------------------------------------------------------------------------------
 add wave -radix hex -label data_logic_vector /data_logic_vector
-add wave -radix dec -label w_address_integer /w_address_integer
-add wave -radix dec -label r_address_integer /r_address_integer
+add wave -radix dec -label write_address_integer /write_address_integer
+add wave -radix dec -label read_address_integer /read_address_integer
 add wave -radix hex -label we_logic /we_logic
 add wave -radix hex -label reg32n_q_logic_vector /reg32n_q_logic_vector
 

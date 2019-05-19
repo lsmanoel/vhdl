@@ -1,7 +1,7 @@
 %!PS-Adobe-3.0
 %%Creator: Model Technology ModelSim ALTERA STARTER EDITION vsim 10.3d Simulator 2014.10 Oct  7 2014
 %%Title: wave.ps
-%%CreationDate: 2019-05-18 07:24:46 pm
+%%CreationDate: 2019-05-18 10:21:51 pm
 %%DocumentData: Clean8Bit
 %%DocumentNeededResources: font Helvetica
 %%Orientation: Landscape
@@ -34,8 +34,8 @@ gsave
 /originOffset   currentfont   /FontBBox get 1 get   currentfont  /FontMatrix get 3 get   mul   currentfont   /FontType get   42 eq {     1000000 div   } {     neg   } ifelse def
 (reg32n_clock_logic) MLW
 (data_logic_vector) MLW
-(w_address_integer) MLW
-(r_address_integer) MLW
+(write_address_integer) MLW
+(read_address_integer) MLW
 (we_logic) MLW
 (reg32n_q_logic_vector) MLW
 % draw waveform shading
@@ -753,7 +753,7 @@ gsave
 (00000010) -24 LC 6057 593 WT pop 0 originOffset 50 add RSS
 6022 593 MT 6022 593 LT 6029 538 LT 6068 538 LT ST
 6022 593 MT 6022 593 LT 6029 648 LT 6068 648 LT ST
-(w_address_integer) 9999 LC 1433 845 WT TSE RSS
+(write_address_integer) 9999 LC 1433 845 WT TSE RSS
 1922 696 MT 1936 696 LS
 2382 696 MT 2396 696 LS
 2842 696 MT 2856 696 LS
@@ -767,7 +767,7 @@ gsave
 (1) 4528 LC 1505 791 WT pop 0 originOffset 50 add RSS
 1470 791 MT 1470 791 LT 1477 736 LT 6068 736 LT ST
 1470 791 MT 1470 791 LT 1477 846 LT 6068 846 LT ST
-(r_address_integer) 9999 LC 1433 1043 WT TSE RSS
+(read_address_integer) 9999 LC 1433 1043 WT TSE RSS
 1922 894 MT 1936 894 LS
 2382 894 MT 2396 894 LS
 2842 894 MT 2856 894 LS
@@ -855,7 +855,7 @@ gsave
 5884 1385 MT 5884 1385 LT 5891 1330 LT 6068 1330 LT ST
 5884 1385 MT 5884 1385 LT 5891 1440 LT 6068 1440 LT ST
 % draw footer
-(Entity:tb_reg32n  Architecture:waveform  Date: Sat May 18 19:24:46 -03 2019   Row: 1 Page: 1) 9999 LC 300 4799 WT TSW RSS
+(Entity:tb_reg32n  Architecture:waveform  Date: Sat May 18 22:21:51 -03 2019   Row: 1 Page: 1) 9999 LC 300 4799 WT TSW RSS
 grestore
 showpage
 %%EOF
