@@ -13,22 +13,22 @@ Z1 w1558192600
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-R0
-Z5 8reg3232.vhd
-Z6 Freg3232.vhd
+Z5 d/home/lucas/vhdl/register_and_sevenSeg/reg3232
+Z6 8reg3232.vhd
+Z7 Freg3232.vhd
 l0
 L5
 VXGa`_Daz`GD<njkKPAPeB1
 !s100 h;MR[5?_Q`:cY7[JB@b:U1
-Z7 OV;C;10.3d;59
+Z8 OV;C;10.3d;59
 32
-Z8 !s110 1558216375
+Z9 !s110 1558271544
 !i10b 1
-Z9 !s108 1558216375.769358
-Z10 !s90 -reportprogress|300|reg3232.vhd|
-Z11 !s107 reg3232.vhd|
+Z10 !s108 1558271544.326630
+Z11 !s90 -reportprogress|300|reg3232.vhd|
+Z12 !s107 reg3232.vhd|
 !i113 1
-Z12 tExplicit 1
+Z13 tExplicit 1
 Artl
 R2
 R3
@@ -38,51 +38,51 @@ l19
 L16
 VPNmK2Y8V^M@KMHnG:>PT@0
 !s100 Y9l0Di45`4S`4=d]=lX9k0
-R7
-32
 R8
-!i10b 1
+32
 R9
+!i10b 1
 R10
 R11
-!i113 1
 R12
+!i113 1
+R13
 Etb_reg3232
-Z13 w1558208580
+Z14 w1558271523
 R2
 R3
 R4
-R0
-Z14 8tb_reg3232.vhd
-Z15 Ftb_reg3232.vhd
+R5
+Z15 8tb_reg3232.vhd
+Z16 Ftb_reg3232.vhd
 l0
 L5
 VUzMIYF4]l:L=BTD1j^NB>2
 !s100 KQ7YB8oPEDGd<CH5i2XEl2
-R7
-32
 R8
+32
+R9
 !i10b 1
-Z16 !s108 1558216375.822617
-Z17 !s90 -reportprogress|300|tb_reg3232.vhd|
-Z18 !s107 tb_reg3232.vhd|
+Z17 !s108 1558271544.372937
+Z18 !s90 -reportprogress|300|tb_reg3232.vhd|
+Z19 !s107 tb_reg3232.vhd|
 !i113 1
-R12
+R13
 Awaveform
 R2
 R3
 R4
-Z19 DEx4 work 10 tb_reg3232 0 22 UzMIYF4]l:L=BTD1j^NB>2
-l64
+Z20 DEx4 work 10 tb_reg3232 0 22 UzMIYF4]l:L=BTD1j^NB>2
+l66
 L8
-Z20 VSL8FDP]8KB^MDf4Hi]:SG3
-Z21 !s100 FNBCT`nj?gFUn4@X5KjdA2
-R7
-32
+Ve=HS7`zCUl>J]DGP5W48B3
+!s100 b_6SmNlDA?GWRFl2o2hzd1
 R8
+32
+R9
 !i10b 1
-R16
 R17
 R18
+R19
 !i113 1
-R12
+R13

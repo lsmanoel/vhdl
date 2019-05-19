@@ -16,33 +16,17 @@ view wave
 #label: nome da forma de onda
 
 #------------------------------------------------------------------------------------------
-#CLOCK
-add wave -radix binary -label clock_50_0_logic /clock_50_0_logic
-#add wave -radix binary -label clock_50_PI_logic /clock_50_PI_logic
+add wave -radix binary -label reg3232_clock_logic /reg3232_clock_logic
 
 #------------------------------------------------------------------------------------------
-#DATA
-add wave -radix hex -color yellow -label data_unsigned /data_unsigned
+add wave -radix hex -label data_logic_vector /data_logic_vector
+add wave -radix dec -label write_address_integer /write_address_integer
+add wave -radix dec -label read_address_integer /read_address_integer
+add wave -radix hex -label we_logic /we_logic
+add wave -radix hex -label reg3232_q_logic_vector /reg3232_q_logic_vector
 
 #------------------------------------------------------------------------------------------
-#WR_ADDRESS
-add wave -radix dec -color yellow -label w_address_integer /w_address_integer
-add wave -radix dec -color orange -label r_address_integer /r_address_integer
-
-#------------------------------------------------------------------------------------------
-#WE
-add wave -radix binary -label we_logic /we_logic
-
-#------------------------------------------------------------------------------------------
-#Q
-add wave -radix hex -label q_unsigned /q_unsigned
-add wave -radix dec -label q_integer /q_integer
-
-#------------------------------------------------------------------------------------------
-#REG3232
-
-#------------------------------------------------------------------------------------------
-run 400 ns
+run 1000ns
 
 wave zoomfull
 write wave wave.ps

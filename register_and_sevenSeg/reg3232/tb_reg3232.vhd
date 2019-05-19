@@ -18,8 +18,8 @@ architecture waveform of tb_reg3232 is
 
 	-------------------------------------------------------------------
 	-- WR_ADDRESS
-	signal w_address_integer: integer range 0 to 31;
-	signal r_address_integer: integer range 0 to 31;
+	signal write_address_integer: integer range 0 to 31:=0;
+	signal read_address_integer: integer range 0 to 31:=0;
 	signal wr_address_unsigned: Unsigned (9 downto 0);
 	signal wr_address_logic_vector: std_logic_vector (9 downto 0);
 
@@ -29,7 +29,7 @@ architecture waveform of tb_reg3232 is
 
 	-------------------------------------------------------------------
 	-- Q
-	signal q_integer: integer;
+	signal q_integer: integer:=0;
 	signal q_unsigned: Unsigned (31 downto 0);
 	signal q_logic_vector: std_logic_vector (31 downto 0);
 
@@ -47,18 +47,20 @@ architecture waveform of tb_reg3232 is
 	signal reg3232_clock_logic: std_logic;
 	signal reg3232_we_logic: std_logic;
 
-	signal reg3232_data_unsigned: Unsigned(31 downto 0);
+	signal reg3232_data_integer: integer:=0;
+	signal reg3232_data_unsigned: Unsigned (31 downto 0);
 	signal reg3232_data_logic_vector: std_logic_vector (31 downto 0);
 
-	signal reg3232_write_address_integer: integer range 0 to 31;
-	signal reg3232_write_address_unsigned: Unsigned(31 downto 0);
-	signal reg3232_write_address_logic_vector: std_logic_vector(31 downto 0);
+	signal reg3232_write_address_integer: integer range 0 to 31:=0;
+	signal reg3232_write_address_unsigned: Unsigned (4 downto 0);
+	signal reg3232_write_address_logic_vector: std_logic_vector(4 downto 0);
 
-	signal reg3232_read_address_integer: integer range 0 to 31;
-	signal reg3232_read_address_unsigned: Unsigned(31 downto 0);
-	signal reg3232_read_address_logic_vector: std_logic_vector (31 downto 0);
+	signal reg3232_read_address_integer: integer range 0 to 31:=0;
+	signal reg3232_read_address_unsigned: Unsigned (4 downto 0);
+	signal reg3232_read_address_logic_vector: std_logic_vector (4 downto 0);
 
-	signal reg3232_q_unsigned: Unsigned(31 downto 0);
+	signal reg3232_q_integer: integer:=0;
+	signal reg3232_q_unsigned: Unsigned (31 downto 0);
 	signal reg3232_q_logic_vector: std_logic_vector (31 downto 0);
 
 begin
@@ -88,10 +90,10 @@ begin
 	-- 	wait for 10 ns;
 	-- end process;
 
-	w_address_integer <= 1;
-	r_address_integer <= 1;
+	write_address_integer <= 1;
+	read_address_integer <= 1;
 
-	wr_address_unsigned <= To_unsigned(w_address_integer, 5)&To_unsigned(r_address_integer, 5);	
+	wr_address_unsigned <= To_unsigned(write_address_integer, 5)&To_unsigned(read_address_integer, 5);	
 	wr_address_logic_vector	<= Std_logic_vector(wr_address_unsigned);
 
 	--===============================================================--
@@ -133,12 +135,30 @@ begin
 				READ_ADDRESS 			=> reg3232_read_address_integer,
 				WE 						=> reg3232_we_logic,
 				Q 						=> reg3232_q_logic_vector);
+	
+	reg3232_data_unsigned <= Unsigned(reg3232_data_logic_vector);
+	reg3232_data_integer <= To_integer(reg3232_data_unsigned);
 
+	reg3232_write_address_unsigned <= To_unsigned(reg3232_write_address_integer, 5);
+	reg3232_write_address_logic_vector <= Std_logic_vector(reg3232_write_address_unsigned);
+
+	reg3232_read_address_unsigned <= To_unsigned(reg3232_read_address_integer, 5);
+	reg3232_read_address_logic_vector <= Std_logic_vector(reg3232_read_address_unsigned);
+
+	reg3232_q_unsigned <= Unsigned(reg3232_q_logic_vector);
+	reg3232_q_integer <= To_integer(reg3232_q_unsigned);
+
+	--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&--
 	reg3232_clock_logic <= clock_50_0_logic;
+
 	reg3232_data_logic_vector <= data_logic_vector; 
-	reg3232_write_address_integer <= w_address_integer;
-	reg3232_read_address_integer <= r_address_integer;
+
+	reg3232_write_address_integer <= write_address_integer;
+
+	reg3232_read_address_integer <= read_address_integer;
+
 	reg3232_we_logic <= we_logic;
+
 	q_logic_vector <= reg3232_q_logic_vector;
 
 end architecture;

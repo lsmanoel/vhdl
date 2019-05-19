@@ -1,13 +1,46 @@
-ls
-# db
-# incremental_db
-# output_files
-# seven_seg.qpf
-# seven_seg.qsf
-# seven_seg.qws
-# sevenSeg.vhd
-# sevenSeg.vhd.bak
-# simulation
-# tb_sevenSeg.do
-# tb_sevenSeg.vhd
-# transcript
+do tb.do
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 09:45:13 on May 19,2019
+# vcom -reportprogress 300 sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSeg
+# -- Compiling architecture rtl of sevenSeg
+# End time: 09:45:13 on May 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 09:45:13 on May 19,2019
+# vcom -reportprogress 300 tb_sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSeg
+# -- Compiling architecture waveform of tb_sevenSeg
+# End time: 09:45:13 on May 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 09:45:13 on May 19,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevenseg(waveform)
+# Loading work.sevenseg(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg/sevenSeg_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevenseg
+# 0 ns
+# 1050 ns
+# printing wave to file wave.ps
+# End time: 09:47:02 on May 19,2019, Elapsed time: 0:01:49
+# Errors: 0, Warnings: 5

@@ -3,52 +3,26 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity sevenSeg is
-    generic (DISPLAY_MODE:		std_logic);
-	port 	(SEG_IN:			in std_logic_vector (3  downto 0);
-	 		 SEG_OUT:			out std_logic_vector (7 downto 0);
-	 		 LOAD_DATA:			in std_logic);  
+	generic (DISPLAY_MODE: std_logic := '0');
+	port (DATA: in std_logic_vector (3 downto 0);
+		  Q: out std_logic_vector (6 downto 0));
 end entity;
 
 architecture rtl of sevenSeg is
-	type seven_seg_tab 				is array (31 downto 0) of unsigned(7 downto 0);
-
-	signal seven_seg_tab_1: seven_seg_tab:=(
-		0		=> "11111100",
-		1		=> "01100000",
-		2		=> "11011010",
-		3		=> "11110010",
-		4		=> "01100110",
-		5		=> "10110110",
-		6		=> "10111110",
-		7		=> "11100000",
-		8		=> "11111110",
-		9		=> "11110110",
-		10		=> "11101110",
-		11		=> "00111110",
-		12		=> "10011110",
-		13		=> "10011100",
-		14		=> "01111100",
-		15		=> "10001110",
-		others 	=> "00000000"
+	type sevenSeg_out_array_logic_vector is array (9 downto 0) of std_logic_vector (6 downto 0);
+	constant sevenSeg_tab: sevenSeg_out_array_logic_vector:=(
+		0 => "1111110",
+		1 => "0110000",
+		2 => "1101101",
+		3 => "1111001",
+		4 => "0110011",
+		5 => "1011011",
+		6 => "1011111",
+		7 => "1110000",
+		8 => "1111111",
+		9 => "1111011"
 	);
-
 begin
-
-	process(LOAD_DATA)
-	begin
-		if LOAD_DATA'event and LOAD_DATA = '1' then
-			if DISPLAY_MODE = '0' then
-				SEG_OUT <= 		Std_logic_vector(seven_seg_tab_1(to_integer(Unsigned(SEG_IN))));
-			else		
-				SEG_OUT <= 	not Std_logic_vector(seven_seg_tab_1(to_integer(Unsigned(SEG_IN))));
-			end if;			
-		end if;
-	end process;
-
---	process(LOAD_DATA)
---	begin
---		if LOAD_DATA'event and LOAD_DATA = '1' then
---			SEG_OUT <= 		Std_logic_vector(seven_seg_tab_1(to_integer(Unsigned(SEG_IN))));
---		end if;
---	end process;
+	Q <= sevenSeg_tab(to_integer(Unsigned(DATA))) when DISPLAY_MODE = '0' else
+			not sevenSeg_tab(to_integer(Unsigned(DATA)));	
 end;
