@@ -21,6 +21,7 @@ add wave -radix dec -label data_integer /data_integer
 
 add wave -radix binary -label sevenSeg_q_logic_vector /sevenSeg_q_logic_vector
 add wave -radix dec -label sevenSeg_q_integer /sevenSeg_q_integer
+
 #------------------------------------------------------------------------------------------
 run 1000ns
 
