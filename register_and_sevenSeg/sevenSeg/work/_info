@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 d/home/lucas/vhdl/register_and_sevenSeg/sevenSeg
 Esevenseg
-Z1 w1558229831
+Z1 w1558279956
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -18,13 +18,13 @@ Z5 8sevenSeg.vhd
 Z6 FsevenSeg.vhd
 l0
 L5
-VRIcY]0aFzSmP8I2?>dg_Z2
-!s100 d0mkVkG9Wn6dkcD59d?N_1
+VcB3_=Q[i<LelGgYKb9oY<0
+!s100 G@BHHPLc=13;n:7zR:BHQ1
 Z7 OV;C;10.3d;59
 32
-Z8 !s110 1558269913
+Z8 !s110 1558283164
 !i10b 1
-Z9 !s108 1558269913.324419
+Z9 !s108 1558283164.004609
 Z10 !s90 -reportprogress|300|sevenSeg.vhd|
 Z11 !s107 sevenSeg.vhd|
 !i113 1
@@ -33,11 +33,11 @@ Artl
 R2
 R3
 R4
-DEx4 work 8 sevenseg 0 22 RIcY]0aFzSmP8I2?>dg_Z2
-l25
-L11
-V@MANHK68KlilCnh<3fEH42
-!s100 zz<;DIHNiUiQZc73d_8zT0
+DEx4 work 8 sevenseg 0 22 cB3_=Q[i<LelGgYKb9oY<0
+l35
+L15
+V0Lz8SU^jhz0>8hmBga:Jf0
+!s100 D7?eiMPzoA2A`69YUOP@B0
 R7
 32
 R8
@@ -48,7 +48,7 @@ R11
 !i113 1
 R12
 Etb_sevenseg
-Z13 w1558230430
+Z13 w1558283162
 R2
 R3
 R4
@@ -63,7 +63,7 @@ R7
 32
 R8
 !i10b 1
-Z16 !s108 1558269913.382987
+Z16 !s108 1558283164.068392
 Z17 !s90 -reportprogress|300|tb_sevenSeg.vhd|
 Z18 !s107 tb_sevenSeg.vhd|
 !i113 1
@@ -72,11 +72,11 @@ Awaveform
 R2
 R3
 R4
-DEx4 work 11 tb_sevenseg 0 22 `bQ8^fROIAWnE8d><B_X=2
-l37
+Z19 DEx4 work 11 tb_sevenseg 0 22 `bQ8^fROIAWnE8d><B_X=2
+l55
 L8
-VZ]QSYGUD?Q@bK9@XV_Q4o0
-!s100 W3R1g1HOeVnOe;koZZTGN1
+V80CfOo8JYLYEBC4MW=k1D0
+!s100 ^;4>gSlIC<V;Bd_PW5WkW3
 R7
 32
 R8

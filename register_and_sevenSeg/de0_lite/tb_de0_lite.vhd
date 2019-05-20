@@ -6,59 +6,119 @@ entity tb_de0_lite is
 end entity;
 
 architecture waveform of tb_de0_lite is
-	---------- CLOCK ----------
-	signal adc_clk_10:			std_logic;
-	signal max10_clk1_50:		std_logic;
-	signal max10_clk2_50:		std_logic;
+	-------------------------------------------------------------------
+	-- CLOCK
+	signal adc_clk_10_logic: std_logic;
+	signal max10_clk1_50_logic: std_logic;
+	signal max10_clk2_50_logic:	std_logic;
 	
-	----------- SDRAM ------------
-	signal dram_addr:			std_logic_vector (12 downto 0);
-	signal dram_ba:			 	std_logic_vector (1 downto 0);
-	signal dram_cas_n:			std_logic;
-	signal dram_cke:			std_logic;
-	signal dram_clk:			std_logic;
-	signal dram_cs_n:			std_logic;		
-	signal dram_dq:			 	std_logic_vector(15 downto 0);
-	signal dram_ldqm:			std_logic;
-	signal dram_ras_n:			std_logic;
-	signal dram_udqm:			std_logic;
-	signal ram_we_n:			std_logic;
+	-------------------------------------------------------------------
+	-- SDRAM
+	signal dram_addr_integer: integer range 0 to 4095;
+	signal dram_addr_unsigned: Unsigned (12 downto 0);
+	signal dram_addr_logic_vector: std_logic_vector (12 downto 0);
+
+	signal dram_ba_integer: integer range 0 to 3;
+	signal dram_ba_unsigned: Unsigned(1 downto 0); 
+	signal dram_ba_logic_vector: std_logic_vector (1 downto 0);
+
+	signal dram_cas_n_logic: std_logic;
+	signal dram_cke_logic: std_logic;
+	signal dram_clk_logic: std_logic;
+	signal dram_cs_n_logic: std_logic;
+
+	signal dram_dq_integer: integer range 0 to 65535;
+	signal dram_dq_unsigned: Unsigned (15 downto 0);
+	signal dram_dq_logic_vector: std_logic_vector (15 downto 0);
+
+	signal dram_ldqm_logic: std_logic;
+	signal dram_ras_n_logic: std_logic;
+	signal dram_udqm_logic:	std_logic;
+	signal ram_we_n_logic: std_logic;
 	
-	----------- SEG7 ------------
-	signal hex0:				std_logic_vector(7 downto 0);
-	signal hex1:				std_logic_vector(7 downto 0);
-	signal hex2:				std_logic_vector(7 downto 0);
-	signal hex3:				std_logic_vector(7 downto 0);
-	signal hex4:				std_logic_vector(7 downto 0);
-	signal hex5:				std_logic_vector(7 downto 0);
+	-------------------------------------------------------------------
+	-- SEG7
+	signal hex0_integer: integer range 0 to 255;
+	signal hex0_unsigned: Unsigned (7 downto 0);
+	signal hex0_logic_vector: std_logic_vector (7 downto 0);
 
-	----------- KEY ------------
-	signal key:					std_logic_vector(1 downto 0);
+	signal hex1_integer: integer range 0 to 255;
+	signal hex1_unsigned: Unsigned (7 downto 0); 
+	signal hex1_logic_vector: std_logic_vector (7 downto 0);
 
-	----------- LED ------------
-	signal ledr:				std_logic_vector(9 downto 0);
+	signal hex2_integer: integer range 0 to 255;  
+	signal hex2_unsigned: Unsigned(7 downto 0);  
+	signal hex2_logic_vector: std_logic_vector (7 downto 0); 
 
-	----------- SW ------------
-	signal sw:					std_logic_vector(9 downto 0);
+	signal hex3_integer: integer range 0 to 255;
+	signal hex3_unsigned: Unsigned (7 downto 0); 
+	signal hex3_logic_vector: std_logic_vector (7 downto 0);
 
-	----------- VGA ------------
-	signal vga_b:				std_logic_vector(3 downto 0);
-	signal vga_g:				std_logic_vector(3 downto 0);
-	signal vga_hs:				std_logic;
-	signal vga_r:				std_logic_vector(3 downto 0);
-	signal vga_vs:				std_logic;
+	signal hex4_integer: integer range 0 to 255;
+	signal hex4_unsigned: Unsigned(7 downto 0); 
+	signal hex4_logic_vector: std_logic_vector (7 downto 0);
 
-	----------- Accelerometer ------------
-	signal gsensor_cs_n:		std_logic;
-	signal gsensor_int:			std_logic_vector(2 downto 1);
-	signal gsensor_sclk:		std_logic;
-	signal gsensor_sdi:			std_logic;
-	signal gsensor_sdo:			std_logic;
+	signal hex5_integer: integer range 0 to 255;
+	signal hex5_unsigned: Unsigned (7 downto 0); 
+	signal hex5_logic_vector: std_logic_vector(7 downto 0);
 
-	----------- Arduino ------------
-	signal arduino_io:			std_logic_vector(15 downto 0);
-	signal arduino_reset_n:		std_logic;	
+	-------------------------------------------------------------------
+	-- KEY
+	signal key_integer: integer range 0 to 3;
+	signal key_unsigned: Unsigned(1 downto 0);
+	signal key_logic_vector: std_logic_vector(1 downto 0);
 
+	-------------------------------------------------------------------
+	-- LED
+	signal ledr_integer: integer range 0 to 1023;
+	signal ledr_unsigned: Unsigned (9 downto 0);
+	signal ledr_logic_vector: std_logic_vector(9 downto 0);
+
+	-------------------------------------------------------------------
+	-- SW
+	signal sw_integer: integer range 0 to 1023;
+	signal sw_unsigned: Unsigned (9 downto 0);
+	signal sw_logic_vector: std_logic_vector(9 downto 0);
+
+	-------------------------------------------------------------------
+	-- VGA
+	signal vga_r_integer: integer range 0 to 16;
+	signal vga_r_unsigned: Unsigned (3 downto 0);
+	signal vga_r_logic_vector: std_logic_vector(3 downto 0);
+
+	signal vga_g_integer: integer range 0 to 16;
+	signal vga_g_unsigned: Unsigned (3 downto 0);
+	signal vga_g_logic_vector: std_logic_vector(3 downto 0);
+
+	signal vga_b_integer: integer range 0 to 16;
+	signal vga_b_unsigned: Unsigned ( 3 downto 0);
+	signal vga_b_logic_vector: std_logic_vector(3 downto 0);
+
+	signal vga_hs_logic: std_logic;
+	signal vga_vs_logic: std_logic;
+
+	-------------------------------------------------------------------
+	-- Accelerometer
+	signal gsensor_cs_n_logic: std_logic;
+
+	signal gsensor_int_integer: integer range 2 to 4;
+	signal gsensor_int_unsigned: Unsigned (2 downto 1);
+	signal gsensor_int_logic_vector: std_logic_vector (2 downto 1);
+
+	signal gsensor_sclk_logic: std_logic;
+	signal gsensor_sdi_logic: std_logic;
+	signal gsensor_sdo_logic: std_logic;
+
+	-------------------------------------------------------------------
+	-- Arduino
+	signal arduino_io_integer: integer range 0 to 65535;
+	signal arduino_io_unsigned: Unsigned (15 downto 0);
+	signal arduino_io_logic_vector: std_logic_vector (15 downto 0);
+
+	signal arduino_reset_n_logic: std_logic;	
+
+	-------------------------------------------------------------------
+	-- de0_lite	
 	component de0_lite is
 		port (
 			---------- CLOCK ----------
@@ -115,139 +175,272 @@ architecture waveform of tb_de0_lite is
 			ARDUINO_RESET_N: inout std_logic
 		);
 	end component;
-	 	
+
+	signal de0_lite_adc_clk_10_logic: std_logic;
+	
+	signal de0_lite_max10_clk1_50_logic: std_logic;
+	signal de0_lite_max10_clk2_50_logic: std_logic;
+
+	signal de0_lite_dram_addr_integer: integer range 0 to 4095;
+	signal de0_lite_dram_addr_unsigned: Unsigned (12 downto 0);
+	signal de0_lite_dram_addr_logic_vector: std_logic_vector (12 downto 0);
+	signal de0_lite_dram_ba_integer: integer range 0 to 3;
+	signal de0_lite_dram_ba_unsigned: Unsigned(1 downto 0); 
+	signal de0_lite_dram_ba_logic_vector: std_logic_vector (1 downto 0);
+	signal de0_lite_dram_cas_n_logic: std_logic;
+	signal de0_lite_dram_cke_logic: std_logic;
+	signal de0_lite_dram_clk_logic: std_logic;
+	signal de0_lite_dram_cs_n_logic: std_logic;
+	signal de0_lite_dram_dq_integer: integer range 0 to 65535;
+	signal de0_lite_dram_dq_unsigned: Unsigned (15 downto 0);
+	signal de0_lite_dram_dq_logic_vector: std_logic_vector (15 downto 0);
+	signal de0_lite_dram_ldqm_logic: std_logic;
+	signal de0_lite_dram_ras_n_logic: std_logic;
+	signal de0_lite_dram_udqm_logic:	std_logic;
+	
+	signal de0_lite_ram_we_n_logic: std_logic;
+	
+	signal de0_lite_hex0_integer: integer range 0 to 255;
+	signal de0_lite_hex0_unsigned: Unsigned (7 downto 0);
+	signal de0_lite_hex0_logic_vector: std_logic_vector (7 downto 0);
+	
+	signal de0_lite_hex1_integer: integer range 0 to 255;
+	signal de0_lite_hex1_unsigned: Unsigned (7 downto 0); 
+	signal de0_lite_hex1_logic_vector: std_logic_vector (7 downto 0);
+	
+	signal de0_lite_hex2_integer: integer range 0 to 255;  
+	signal de0_lite_hex2_unsigned: Unsigned(7 downto 0);  
+	signal de0_lite_hex2_logic_vector: std_logic_vector (7 downto 0); 
+	
+	signal de0_lite_hex3_integer: integer range 0 to 255;
+	signal de0_lite_hex3_unsigned: Unsigned (7 downto 0); 
+	signal de0_lite_hex3_logic_vector: std_logic_vector (7 downto 0);
+	
+	signal de0_lite_hex4_integer: integer range 0 to 255;
+	signal de0_lite_hex4_unsigned: Unsigned(7 downto 0); 
+	signal de0_lite_hex4_logic_vector: std_logic_vector (7 downto 0);
+	
+	signal de0_lite_hex5_integer: integer range 0 to 255;
+	signal de0_lite_hex5_unsigned: Unsigned (7 downto 0); 
+	signal de0_lite_hex5_logic_vector: std_logic_vector(7 downto 0);
+
+	signal de0_lite_key_integer: integer range 0 to 3;
+	signal de0_lite_key_unsigned: Unsigned(1 downto 0);
+	signal de0_lite_key_logic_vector: std_logic_vector(1 downto 0);
+
+	signal de0_lite_ledr_integer: integer range 0 to 1023;
+	signal de0_lite_ledr_unsigned: Unsigned (9 downto 0);
+	signal de0_lite_ledr_logic_vector: std_logic_vector(9 downto 0);
+
+	signal de0_lite_sw_integer: integer range 0 to 1023;
+	signal de0_lite_sw_unsigned: Unsigned (9 downto 0);
+	signal de0_lite_sw_logic_vector: std_logic_vector(9 downto 0);
+
+	signal de0_lite_vga_r_integer: integer range 0 to 16;
+	signal de0_lite_vga_r_unsigned: Unsigned (3 downto 0);
+	signal de0_lite_vga_r_logic_vector: std_logic_vector(3 downto 0);
+	signal de0_lite_vga_g_integer: integer range 0 to 16;
+	signal de0_lite_vga_g_unsigned: Unsigned (3 downto 0);
+	signal de0_lite_vga_g_logic_vector: std_logic_vector(3 downto 0);
+	signal de0_lite_vga_b_integer: integer range 0 to 16;
+	signal de0_lite_vga_b_unsigned: Unsigned ( 3 downto 0);
+	signal de0_lite_vga_b_logic_vector: std_logic_vector(3 downto 0);
+	signal de0_lite_vga_hs_logic: std_logic;
+	signal de0_lite_vga_vs_logic: std_logic;
+
+	signal de0_lite_gsensor_cs_n_logic: std_logic;
+	signal de0_lite_gsensor_int_integer: integer range 0 to 2;
+	signal de0_lite_gsensor_int_unsigned: Unsigned (2 downto 1);
+	signal de0_lite_gsensor_int_logic_vector: std_logic_vector (2 downto 1);
+	signal de0_lite_gsensor_sclk_logic: std_logic;
+	signal de0_lite_gsensor_sdi_logic: std_logic;
+	signal de0_lite_gsensor_sdo_logic: std_logic;
+
+	signal de0_lite_arduino_io_integer: integer range 0 to 65535;
+	signal de0_lite_arduino_io_unsigned: Unsigned (15 downto 0);
+	signal de0_lite_arduino_io_logic_vector: std_logic_vector (15 downto 0);
+	signal de0_lite_arduino_reset_n_logic: std_logic;	
+
 begin
+	--===============================================================--
+	-- CLOCK
+	CLOCK_1_50: process -- 50 MHz phase 0
+	begin
+		max10_clk1_50_logic <= '1';
+		wait for 10 ns;
+		max10_clk1_50_logic <= '0';
+		wait for 10 ns;
+	end process;
 
+	CLOCK_2_50: process -- 50 MHz phase pi
+	begin
+		max10_clk2_50_logic <= '0';
+		wait for 10 ns;
+		max10_clk2_50_logic <= '1';
+		wait for 10 ns;
+	end process;
+
+	CLOCK_ADC_10: process -- 10 MHz phase 0
+	begin
+		adc_clk_10_logic <= '1';
+		wait for 50 ns;
+		adc_clk_10_logic <= '0';
+		wait for 50 ns;
+	end process;
+
+	--===============================================================--
+	-- DRAM
+
+	--===============================================================--
+	-- HEX0
+
+	--===============================================================--
+	-- HEX1
+
+	--===============================================================--
+	-- HEX2
+
+	--===============================================================--
+	-- HEX3
+
+	--===============================================================--
+	-- HEX4
+
+	--===============================================================--
+	-- HEX5
+
+	--===============================================================--
+	-- KEY
+
+	--===============================================================--
+	-- LEDR
+
+	--===============================================================--
+	-- SW
+	
+	sw_logic_vector <= '1' & "00000" & "0000"; -- WR & ADDR & DATA
+	--===============================================================--
+	-- VGA
+
+	--===============================================================--
+	-- GSENSOR
+
+	--===============================================================--
+	-- ARDUINO
+
+	--===============================================================--
 	de0_lite_vhd: 	de0_lite 
-					port map(
-						---------- CLOCK ----------
-						ADC_CLK_10		=> adc_clk_10,
-						MAX10_CLK1_50	=> max10_clk1_50,
-						MAX10_CLK2_50	=> max10_clk2_50,
+		port map(
+			ADC_CLK_10		=> de0_lite_adc_clk_10_logic,
+			MAX10_CLK1_50	=> de0_lite_max10_clk1_50_logic,
+			MAX10_CLK2_50	=> de0_lite_max10_clk2_50_logic,
 
-						----------- SDRAM ------------
-						DRAM_ADDR		=> dram_addr,
-						DRAM_BA			=> dram_ba,
-						DRAM_CAS_N		=> dram_cas_n,
-						DRAM_CKE		=> dram_cke,
-						DRAM_CLK		=> dram_clk,
-						DRAM_CS_N		=> dram_cs_n,		
-						DRAM_DQ			=> dram_dq,
-						DRAM_LDQM		=> dram_ldqm,
-						DRAM_RAS_N		=> dram_ras_n,
-						DRAM_UDQM		=> dram_udqm,
-						RAM_WE_N		=> ram_we_n,
+			DRAM_ADDR		=> de0_lite_dram_addr_logic_vector,
+			DRAM_BA			=> de0_lite_dram_ba_logic_vector,
+			DRAM_CAS_N		=> de0_lite_dram_cas_n_logic,
+			DRAM_CKE		=> de0_lite_dram_cke_logic,
+			DRAM_CLK		=> de0_lite_dram_clk_logic,
+			DRAM_CS_N		=> de0_lite_dram_cs_n_logic,		
+			DRAM_DQ			=> de0_lite_dram_dq_logic_vector,
+			DRAM_LDQM		=> de0_lite_dram_ldqm_logic,
+			DRAM_RAS_N		=> de0_lite_dram_ras_n_logic,
+			DRAM_UDQM		=> de0_lite_dram_udqm_logic,
+			RAM_WE_N		=> de0_lite_ram_we_n_logic,
 
-						----------- SEG7 ------------
-						HEX0			=> hex0,
-						HEX1			=> hex1,
-						HEX2			=> hex2,
-						HEX3			=> hex3,
-						HEX4			=> hex4,
-						HEX5			=> hex5,
+			HEX0			=> de0_lite_hex0_logic_vector,
+			HEX1			=> de0_lite_hex1_logic_vector,
+			HEX2			=> de0_lite_hex2_logic_vector,
+			HEX3			=> de0_lite_hex3_logic_vector,
+			HEX4			=> de0_lite_hex4_logic_vector,
+			HEX5			=> de0_lite_hex5_logic_vector,
 
-						----------- KEY ------------
-						KEY				=> key,
+			KEY				=> de0_lite_key_logic_vector,
 
-						----------- LED ------------
-						LEDR 			=> ledr,
+			LEDR 			=> de0_lite_ledr_logic_vector,
 
-						----------- SW ------------
-						SW 				=> sw,
+			SW 				=> de0_lite_sw_logic_vector,
 
-						----------- VGA ------------
-						VGA_R			=> vga_r,
-						VGA_B 			=> vga_b,
-						VGA_G 			=> vga_g,
-						VGA_HS			=> vga_hs,
-						VGA_VS			=> vga_vs,
+			VGA_R			=> de0_lite_vga_r_logic_vector,
+			VGA_B 			=> de0_lite_vga_b_logic_vector,
+			VGA_G 			=> de0_lite_vga_g_logic_vector,
+			VGA_HS			=> de0_lite_vga_hs_logic,
+			VGA_VS			=> de0_lite_vga_vs_logic,
 
-						----------- Accelerometer ------------
-						GSENSOR_CS_N	=> gsensor_cs_n,
-						GSENSOR_INT		=> gsensor_int,
-						GSENSOR_SCLK	=> gsensor_sclk,
-						GSENSOR_SDI		=> gsensor_sdi,
-						GSENSOR_SDO		=> gsensor_sdo,
+			GSENSOR_CS_N	=> de0_lite_gsensor_cs_n_logic,
+			GSENSOR_INT		=> de0_lite_gsensor_int_logic_vector,
+			GSENSOR_SCLK	=> de0_lite_gsensor_sclk_logic,
+			GSENSOR_SDI		=> de0_lite_gsensor_sdi_logic,
+			GSENSOR_SDO		=> de0_lite_gsensor_sdo_logic,
 
-						----------- Arduino ------------
-						ARDUINO_IO 		=> arduino_io,
-						ARDUINO_RESET_N	=> arduino_reset_n	
-					);
+			ARDUINO_IO 		=> de0_lite_arduino_io_logic_vector,
+			ARDUINO_RESET_N	=> de0_lite_arduino_reset_n_logic	
+		);
 
 
-	-----------  10 MHz phase 0  - sw counter - up ------------
-	process	
-		variable count: integer;	
-	begin
-		if count > 7 then
-			count := 0;
-		else
-			count := count + 1;
-		end if;	
+	de0_lite_dram_addr_unsigned <= Unsigned(de0_lite_dram_addr_logic_vector);
+	de0_lite_dram_addr_integer <= To_integer(de0_lite_dram_addr_unsigned);
+	de0_lite_dram_ba_unsigned <= Unsigned(de0_lite_dram_ba_logic_vector);
+	de0_lite_dram_ba_integer <= To_integer(de0_lite_dram_ba_unsigned);
+	de0_lite_dram_dq_unsigned <= Unsigned(de0_lite_dram_dq_logic_vector);
+	de0_lite_dram_dq_integer <= To_integer(de0_lite_dram_dq_unsigned);
 
-		sw(3 downto 0) <= not std_logic_vector(To_unsigned(count, 4));
-		
-		wait for 200 ns;
-    end process;								
+	de0_lite_hex0_unsigned <= Unsigned(de0_lite_hex0_logic_vector);
+	de0_lite_hex0_integer <= To_integer(de0_lite_hex0_unsigned);
 
-	-----------  10 MHz phase 0  - sw counter - up ------------	
-	process	
-		variable count: integer;	
-	begin
-		if count > 7 then
-			count := 0;
-		else
-			count := count + 1;
-		end if;	
+	de0_lite_hex1_unsigned <= Unsigned(de0_lite_hex1_logic_vector);
+	de0_lite_hex1_integer <= To_integer(de0_lite_hex1_unsigned);
 
-		sw(7 downto 4) <= not std_logic_vector(To_unsigned(count, 4));
+	de0_lite_hex2_unsigned <= Unsigned(de0_lite_hex2_logic_vector);
+	de0_lite_hex2_integer <= To_integer(de0_lite_hex2_unsigned);
 
-		wait for 60 ns;
-    end process;	
+	de0_lite_hex3_unsigned <= Unsigned(de0_lite_hex3_logic_vector);
+	de0_lite_hex3_integer <= To_integer(de0_lite_hex3_unsigned);
 
- 	-----------  reg32n WE ------------
-	WE: process
-	begin
-		sw(8) <= '0';
-		wait for 100 ns;
-		sw(8) <= '1';
-		wait for 200 ns;
-	end process WE;
+	de0_lite_hex4_unsigned <= Unsigned(de0_lite_hex4_logic_vector);
+	de0_lite_hex4_integer <= To_integer(de0_lite_hex4_unsigned);
 
-    -----------  sevenSeg LOAD_DATA ------------	
-	LOAD_DATA: process		
-	begin
-		sw(9) <= '0';
-		wait for 100 ns;
-		sw(9) <= '1';
-		wait for 200 ns;
-    end process;
+	de0_lite_hex5_unsigned <= Unsigned(de0_lite_hex5_logic_vector);
+	de0_lite_hex5_integer <= To_integer(de0_lite_hex5_unsigned);
 
-	----------- 50 MHz phase 0 ------------
-	CLOCK_1_50: process
-	begin
-		max10_clk1_50 <= '1';
-		wait for 10 ns;
-		max10_clk1_50 <= '0';
-		wait for 10 ns;
-	end process;
+	de0_lite_key_unsigned <= Unsigned(de0_lite_key_logic_vector);
+	de0_lite_key_integer <= To_integer(de0_lite_key_unsigned);
 
-	----------- 50 MHz phase pi ------------
-	CLOCK_2_50: process
-	begin
-		max10_clk2_50 <= '0';
-		wait for 10 ns;
-		max10_clk2_50 <= '1';
-		wait for 10 ns;
-	end process;
+	de0_lite_ledr_unsigned <= Unsigned(de0_lite_ledr_logic_vector);
+	de0_lite_ledr_integer <= To_integer(de0_lite_ledr_unsigned);
 
-	----------- 10 MHz phase 0 ------------
-	CLOCK_ADC_10: process
-	begin
-		adc_clk_10 <= '1';
-		wait for 50 ns;
-		adc_clk_10 <= '0';
-		wait for 50 ns;
-	end process;
- 
+	de0_lite_sw_unsigned <= Unsigned(de0_lite_sw_logic_vector);
+	de0_lite_sw_integer <= To_integer(de0_lite_sw_unsigned);
+
+	de0_lite_vga_r_unsigned <= Unsigned(de0_lite_vga_r_logic_vector);
+	de0_lite_vga_r_integer <= To_integer(de0_lite_vga_r_unsigned);
+	de0_lite_vga_b_unsigned <= Unsigned(de0_lite_vga_b_logic_vector);
+	de0_lite_vga_b_integer <= To_integer(de0_lite_vga_b_unsigned);
+	de0_lite_vga_g_unsigned <= Unsigned(de0_lite_vga_g_logic_vector);
+	de0_lite_vga_g_integer <= To_integer(de0_lite_vga_g_unsigned);
+
+	de0_lite_gsensor_int_unsigned <= Unsigned(de0_lite_gsensor_int_logic_vector);
+	de0_lite_gsensor_int_integer <= To_integer(de0_lite_gsensor_int_unsigned);
+
+	de0_lite_arduino_io_unsigned <= Unsigned(de0_lite_arduino_io_logic_vector);
+	de0_lite_arduino_io_integer <= To_integer(de0_lite_arduino_io_unsigned);
+
+	--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&--
+	-- CLOCK
+	de0_lite_adc_clk_10_logic <= adc_clk_10_logic; 
+	de0_lite_max10_clk1_50_logic <= max10_clk1_50_logic; 
+	de0_lite_max10_clk2_50_logic <= max10_clk2_50_logic; 
+
+	--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&--
+	-- SW
+	de0_lite_sw_logic_vector <= sw_logic_vector;
+
+	--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&--
+	-- SEVENSEG
+	hex0_logic_vector <= de0_lite_hex0_logic_vector;
+	hex1_logic_vector <= de0_lite_hex1_logic_vector;
+	hex2_logic_vector <= de0_lite_hex2_logic_vector;
+	hex3_logic_vector <= de0_lite_hex3_logic_vector;
+	hex4_logic_vector <= de0_lite_hex4_logic_vector;
+	hex5_logic_vector <= de0_lite_hex5_logic_vector;
+
 end architecture;

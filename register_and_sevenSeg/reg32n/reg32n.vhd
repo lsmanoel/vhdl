@@ -5,12 +5,12 @@ use ieee.numeric_std.all;
 entity reg32n is
 	generic (N:		integer);
 	port (
-		CLOCK: 				in std_logic;
-		DATA: 				in std_logic_vector 	(31 downto 0);
-		WRITE_ADDRESS: 		in integer range 0 to 31;
-		READ_ADDRESS: 		in integer range 0 to 31;
-		WE: 				in std_logic;
-		Q:					out std_logic_vector (31 downto 0)
+		CLOCK: in std_logic;
+		DATA: in std_logic_vector 	(31 downto 0);
+		WRITE_ADDRESS: in integer range 0 to 31;
+		READ_ADDRESS: in integer range 0 to 31;
+		WE: in std_logic;
+		Q: out std_logic_vector (31 downto 0)
 	);
 end entity;
 

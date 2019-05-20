@@ -67,54 +67,110 @@ entity de0_lite is
 		ARDUINO_RESET_N:	inout std_logic
 	);
 end entity;
-
-architecture rtl of de0_lite is	
+architecture rtl of de0_lite is
 	-------------------------------------------------------------------
-	component reg32n is
-		generic (N:		integer);
-		port 	(CLOCK: 				in std_logic;
-				 DATA: 					in std_logic_vector (31 downto 0);
-				 WRITE_ADDRESS: 		in integer range 0 to 31;
-				 READ_ADDRESS: 			in integer range 0 to 31;
-				 WE: 					in std_logic;
-				 Q:						out std_logic_vector (31 downto 0));
+	-- REG3232
+	component reg3232 is
+		port (
+			CLOCK: in std_logic;
+			DATA: in std_logic_vector (31 downto 0);
+			WRITE_ADDRESS: in integer range 0 to 31;
+			READ_ADDRESS: in integer range 0 to 31;
+			WE: in std_logic;
+			Q:	out std_logic_vector (31 downto 0)
+		);
 	end component;
 
-	signal reg32n_clock: std_logic;
-	signal reg32n_we: std_logic;
+	signal reg3232_clock_logic: std_logic;
 
-	signal reg32n_data_unsigned: Unsigned(31 downto 0);
+	signal reg3232_data_integer: integer;
+	signal reg3232_data_unsigned: Unsigned (31 downto 0);
+	signal reg3232_data_logic_vector: std_logic_vector (31 downto 0);
+
+	signal reg3232_write_address_integer: integer range 0 to 31;
+	signal reg3232_write_address_unsigned: Unsigned (4 downto 0);
+	signal reg3232_write_address_logic_vector: std_logic_vector(4 downto 0);
+
+	signal reg3232_read_address_integer: integer range 0 to 31;
+	signal reg3232_read_address_unsigned: Unsigned (4 downto 0);
+	signal reg3232_read_address_logic_vector: std_logic_vector (4 downto 0);
+	
+	signal reg3232_we_logic: std_logic;
+
+	signal reg3232_q_integer: integer;
+	signal reg3232_q_unsigned: Unsigned (31 downto 0);
+	signal reg3232_q_logic_vector: std_logic_vector (31 downto 0);
+
+	-------------------------------------------------------------------
+	-- REG32n
+	component reg32n is
+		generic (N: integer);
+		port (
+			CLOCK: in std_logic;
+			DATA: in std_logic_vector (31 downto 0);
+			WRITE_ADDRESS: in integer range 0 to N-1;
+			READ_ADDRESS: in integer range 0 to N-1;
+			WE: in std_logic;
+			Q:	out std_logic_vector (31 downto 0)
+		);
+	end component;
+
+	constant reg32n_n_const_integer: integer := 32;
+
+	signal reg32n_clock_logic: std_logic;
+
+	signal reg32n_data_integer: integer;
+	signal reg32n_data_unsigned: Unsigned (31 downto 0);
 	signal reg32n_data_logic_vector: std_logic_vector (31 downto 0);
 
-	signal reg32n_write_address_integer: integer range 0 to 31;
-	signal reg32n_write_address_unsigned: Unsigned(31 downto 0);
-	signal reg32n_write_address_logic_vector: std_logic_vector(31 downto 0);
+	signal reg32n_write_address_integer: integer range 0 to reg32n_n_const_integer;
+	signal reg32n_write_address_unsigned: Unsigned (4 downto 0);
+	signal reg32n_write_address_logic_vector: std_logic_vector(4 downto 0);
 
-	signal reg32n_read_address_integer: integer range 0 to 31;
-	signal reg32n_read_address_unsigned: Unsigned(31 downto 0);
-	signal reg32n_read_address_logic_vector: std_logic_vector (31 downto 0);
+	signal reg32n_read_address_integer: integer range 0 to reg32n_n_const_integer;
+	signal reg32n_read_address_unsigned: Unsigned (4 downto 0);
+	signal reg32n_read_address_logic_vector: std_logic_vector (4 downto 0);
+	
+	signal reg32n_we_logic: std_logic;
 
-	signal reg32n_q_unsigned: Unsigned(31 downto 0);
+	signal reg32n_q_integer: integer;
+	signal reg32n_q_unsigned: Unsigned (31 downto 0);
 	signal reg32n_q_logic_vector: std_logic_vector (31 downto 0);
 	
-	-------------------------------------------------------------------	
+	-------------------------------------------------------------------
+	-- SEVENSEG
 	component sevenSeg is
-	    generic (DISPLAY_MODE:			std_logic);
-		port 	(SEG_IN:				in std_logic_vector (3 downto 0);
-		 		 SEG_OUT:				out std_logic_vector (7 downto 0);
-		 		 LOAD_DATA:				in std_logic);   	
+		generic (DISPLAY_MODE: std_logic);
+		port (
+			CLOCK: in std_logic;
+			DOT: in std_logic;
+			DATA: in std_logic_vector (3 downto 0);
+			Q: out std_logic_vector (7 downto 0));  	
 	end component;
 
-	type seven_seg_input_array is array (5 downto 0) of std_logic_vector(3 downto 0);
-	type seven_seg_output_array is array (5 downto 0) of std_logic_vector(7 downto 0);
-	type seven_seg_load_array is array (5 downto 0) of std_logic;
+	type sevenSeg_data_std_integer_array is array (5 downto 0) of integer range 0 to 15;
+	type sevenSeg_data_std_unsigned_array is array (5 downto 0) of Unsigned (3 downto 0);
+	type sevenSeg_data_std_logic_vector_array is array (5 downto 0) of std_logic_vector (3 downto 0);
 
-	constant sevenSeg_displayMode: std_logic := '0';
-	signal sevenSeg_seg_in: seven_seg_input_array;
-	signal sevenSeg_seg_out: seven_seg_output_array;
-	signal sevenSeg_load_data: seven_seg_load_array;
+	type sevenSeg_q_std_integer_array is array (5 downto 0) of integer range 0 to 255;
+	type sevenSeg_q_std_unsigned_array is array (5 downto 0) of Unsigned (7 downto 0);
+	type sevenSeg_q_std_logic_vector_array is array (5 downto 0) of std_logic_vector (7 downto 0);
 
-	signal test_012345_input: seven_seg_input_array:=(
+	constant sevenSeg_display_mode_const_logic: std_logic := '0';
+
+	signal sevenSeg_clock_logic_vector: std_logic_vector (5 downto 0);
+
+	signal sevenSeg_dot_logic_vector: std_logic_vector (5 downto 0);
+
+	signal sevenSeg_data_integer_array: sevenSeg_data_std_integer_array;
+	signal sevenSeg_data_unsigned_array: sevenSeg_data_std_unsigned_array;
+	signal sevenSeg_data_logic_vector_array: sevenSeg_data_std_logic_vector_array;
+
+	signal sevenSeg_q_integer_array: sevenSeg_q_std_integer_array;
+	signal sevenSeg_q_unsigned_array: sevenSeg_q_std_unsigned_array;
+	signal sevenSeg_q_logic_vector_array: sevenSeg_q_std_logic_vector_array;
+
+	signal test_012345_input: sevenSeg_data_std_logic_vector_array:=(
 		0		=> "0000",
 		1		=> "0001",
 		2		=> "0010",
@@ -124,63 +180,115 @@ architecture rtl of de0_lite is
 
 begin
 	--===============================================================--
+	reg3232_vhd: reg3232
+			port map (
+				CLOCK 					=> reg3232_clock_logic,
+				DATA 					=> reg3232_data_logic_vector,
+				WRITE_ADDRESS 			=> reg3232_write_address_integer,
+				READ_ADDRESS 			=> reg3232_read_address_integer,
+				WE 						=> reg3232_we_logic,
+				Q 						=> reg3232_q_logic_vector);
+
+	reg3232_data_unsigned <= Unsigned (reg3232_data_logic_vector);
+	reg3232_data_integer <= To_integer (reg3232_data_unsigned);
+
+	reg3232_read_address_unsigned <= Unsigned(reg3232_read_address_logic_vector);
+	reg3232_read_address_integer <= To_integer(reg3232_read_address_unsigned);
+	
+	reg3232_write_address_unsigned <= Unsigned(reg3232_write_address_logic_vector);
+	reg3232_write_address_integer <= To_integer(reg3232_write_address_unsigned);
+
+	reg3232_q_unsigned <= Unsigned(reg3232_q_logic_vector);
+	reg3232_q_integer <= To_integer(reg3232_q_unsigned);
+
+	--===============================================================--
 	reg32n_vhd: reg32n
 			generic map (
 				N						=> 32)
 			port map (
-				CLOCK 					=> MAX10_CLK1_50,
+				CLOCK 					=> reg32n_clock_logic,
 				DATA 					=> reg32n_data_logic_vector,
 				WRITE_ADDRESS 			=> reg32n_write_address_integer,
 				READ_ADDRESS 			=> reg32n_read_address_integer,
-				WE 						=> reg32n_we,
+				WE 						=> reg32n_we_logic,
 				Q 						=> reg32n_q_logic_vector);
 
-	reg32n_clock <= MAX10_CLK1_50;
-
-	reg32n_data_logic_vector(3 downto 0) <= SW(3 downto 0); 
-	reg32n_data_logic_vector(31 downto 4) <= (others => '0');
-
-	reg32n_we <= SW(8);
-
-	reg32n_read_address_logic_vector(3 downto 0) <= SW(7 downto 4);
-	reg32n_read_address_logic_vector(31 downto 4) <= (others => '0');
+	reg32n_data_unsigned <= Unsigned (reg32n_data_logic_vector);
+	reg32n_data_integer <= To_integer (reg32n_data_unsigned);
 
 	reg32n_read_address_unsigned <= Unsigned(reg32n_read_address_logic_vector);
 	reg32n_read_address_integer <= To_integer(reg32n_read_address_unsigned);
-
-	reg32n_write_address_logic_vector(3 downto 0) <= SW(7 downto 4);
-	reg32n_write_address_logic_vector(31 downto 4) <= (others => '0');
 	
 	reg32n_write_address_unsigned <= Unsigned(reg32n_write_address_logic_vector);
 	reg32n_write_address_integer <= To_integer(reg32n_write_address_unsigned);
 
 	reg32n_q_unsigned <= Unsigned(reg32n_q_logic_vector);
+	reg32n_q_integer <= To_integer(reg32n_q_unsigned);
 
 	--===============================================================--
 	hex_display_array: for i in 5 downto 0 generate 
 	-------------------------------------------------------------------
-		sevenSeg_vhd: sevenSeg 
-			generic map (
-				DISPLAY_MODE			=> '0')
-			port map (
-				SEG_IN					=> sevenSeg_seg_in(i),
-				SEG_OUT					=> sevenSeg_seg_out(i),
-				LOAD_DATA				=> sevenSeg_load_data(i));
+	sevenSeg_vhd: sevenSeg 	
+		generic map (
+			DISPLAY_MODE 		=> sevenSeg_display_mode_const_logic)
+		port map (
+			CLOCK 				=> sevenSeg_clock_logic_vector(i),
+			DOT 				=> sevenSeg_dot_logic_vector(i),
+			DATA 				=> sevenSeg_data_logic_vector_array(i),
+			Q 					=> sevenSeg_q_logic_vector_array(i));
 
+	sevenSeg_data_unsigned_array(i) <= Unsigned (sevenSeg_data_logic_vector_array(i));
+	sevenSeg_data_integer_array(i) <= To_integer (sevenSeg_data_unsigned_array(i));
+
+	sevenSeg_q_unsigned_array(i) <= Unsigned (sevenSeg_q_logic_vector_array(i));
+	sevenSeg_q_integer_array(i) <= To_integer (sevenSeg_q_unsigned_array(i));
 	-------------------------------------------------------------------		
 	end generate hex_display_array;
+
+	--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&--
+	-- REG3232
+	reg3232_clock_logic <= MAX10_CLK1_50;
+
+	reg3232_data_logic_vector(3 downto 0) <= SW(3 downto 0); 
+	reg3232_data_logic_vector(31 downto 4) <= (others => '0');
+
+	reg3232_write_address_logic_vector <= SW(8 downto 4);
+
+	reg3232_read_address_logic_vector <= SW(8 downto 4);
 	
+	reg3232_we_logic <= SW(9);
+
+	
+	--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&--
+	-- REG32n
+	reg32n_clock_logic <= MAX10_CLK1_50;
+
+	reg32n_data_logic_vector(3 downto 0) <= SW(3 downto 0); 
+	reg32n_data_logic_vector(31 downto 4) <= (others => '0');
+
+	reg32n_write_address_logic_vector <= SW(8 downto 4);
+
+	reg32n_read_address_logic_vector <= SW(8 downto 4);
+	
+	reg32n_we_logic <= SW(9);
+
+	--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&--
+	-- SEVENSEG
 	load_data_ctrl: for i in 5 downto 0 generate
-		sevenSeg_load_data(i) <= SW(9);
-		sevenSeg_seg_in(i) <= reg32n_q_logic_vector(3 downto 0);
+		sevenSeg_clock_logic_vector(i) <= MAX10_CLK1_50;
+
+		sevenSeg_dot_logic_vector(i) <= '1';
 	end generate load_data_ctrl;
 
-	HEX0 <= sevenSeg_seg_out(0);
-	HEX1 <= sevenSeg_seg_out(1);
-	HEX2 <= sevenSeg_seg_out(2);
-	HEX3 <= sevenSeg_seg_out(3);
-	HEX4 <= sevenSeg_seg_out(4);
-	HEX5 <= sevenSeg_seg_out(5);
+	sevenSeg_data_logic_vector_array(0) <= reg3232_q_logic_vector(3 downto 0);
+	sevenSeg_data_logic_vector_array(1) <= reg32n_q_logic_vector(3 downto 0);
+
+	HEX0 <= sevenSeg_q_logic_vector_array(0);
+	HEX1 <= sevenSeg_q_logic_vector_array(1);
+	HEX2 <= sevenSeg_q_logic_vector_array(2);
+	HEX3 <= sevenSeg_q_logic_vector_array(3);
+	HEX4 <= sevenSeg_q_logic_vector_array(4);
+	HEX5 <= sevenSeg_q_logic_vector_array(5);
 
 end;
 

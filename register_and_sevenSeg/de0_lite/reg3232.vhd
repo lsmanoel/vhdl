@@ -15,15 +15,15 @@ end entity;
 
 architecture rtl of reg3232 is
 	type MEM is array (0 to 31) of std_logic_vector(31 downto 0);
-	signal ram_block: MEM;
+	signal reg3232_ram_core: MEM;
 begin
 
 	process(CLOCK)
 	begin	
 		if CLOCK'event and CLOCK = '1' then
 			if (WE = '1') then
-				Q <= ram_block(READ_ADDRESS);
-				ram_block(WRITE_ADDRESS) <= DATA;
+				Q <= reg3232_ram_core(READ_ADDRESS);
+				reg3232_ram_core(WRITE_ADDRESS) <= DATA;
 			end if;
 		end if;
 	end process;
