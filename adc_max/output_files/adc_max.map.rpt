@@ -1,5 +1,5 @@
 Analysis & Synthesis report for adc_max
-Wed May 29 16:03:33 2019
+Wed May 29 16:26:07 2019
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -113,7 +113,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed May 29 16:03:33 2019      ;
+; Analysis & Synthesis Status        ; Successful - Wed May 29 16:26:07 2019      ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                      ; adc_max                                    ;
 ; Top-level Entity Name              ; adc_max                                    ;
@@ -1549,7 +1549,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:11     ;
+; Top            ; 00:00:12     ;
 +----------------+--------------+
 
 
@@ -1559,24 +1559,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Wed May 29 16:02:41 2019
+    Info: Processing started: Wed May 29 16:25:15 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off adc_max -c adc_max
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12248): Elaborating Qsys system entity "adc_qsys.qsys"
-Info (12250): 2019.05.29.16:03:03 Progress: Loading adc_max/adc_qsys.qsys
-Info (12250): 2019.05.29.16:03:04 Progress: Reading input file
-Info (12250): 2019.05.29.16:03:04 Progress: Adding adc_0 [altera_modular_adc 15.0]
-Info (12250): 2019.05.29.16:03:04 Progress: Parameterizing module adc_0
-Info (12250): 2019.05.29.16:03:04 Progress: Adding altpll_0 [altpll 15.0]
-Info (12250): 2019.05.29.16:03:07 Progress: Parameterizing module altpll_0
-Info (12250): 2019.05.29.16:03:07 Progress: Adding clk_50 [clock_source 15.0]
-Info (12250): 2019.05.29.16:03:07 Progress: Parameterizing module clk_50
-Info (12250): 2019.05.29.16:03:07 Progress: Adding clock_bridge_sys [altera_clock_bridge 15.0]
-Info (12250): 2019.05.29.16:03:07 Progress: Parameterizing module clock_bridge_sys
-Info (12250): 2019.05.29.16:03:07 Progress: Building connections
-Info (12250): 2019.05.29.16:03:07 Progress: Parameterizing connections
-Info (12250): 2019.05.29.16:03:07 Progress: Validating
-Info (12250): 2019.05.29.16:03:09 Progress: Done reading input file
+Info (12250): 2019.05.29.16:25:38 Progress: Loading adc_max/adc_qsys.qsys
+Info (12250): 2019.05.29.16:25:38 Progress: Reading input file
+Info (12250): 2019.05.29.16:25:38 Progress: Adding adc_0 [altera_modular_adc 15.0]
+Info (12250): 2019.05.29.16:25:39 Progress: Parameterizing module adc_0
+Info (12250): 2019.05.29.16:25:39 Progress: Adding altpll_0 [altpll 15.0]
+Info (12250): 2019.05.29.16:25:42 Progress: Parameterizing module altpll_0
+Info (12250): 2019.05.29.16:25:42 Progress: Adding clk_50 [clock_source 15.0]
+Info (12250): 2019.05.29.16:25:42 Progress: Parameterizing module clk_50
+Info (12250): 2019.05.29.16:25:42 Progress: Adding clock_bridge_sys [altera_clock_bridge 15.0]
+Info (12250): 2019.05.29.16:25:42 Progress: Parameterizing module clock_bridge_sys
+Info (12250): 2019.05.29.16:25:42 Progress: Building connections
+Info (12250): 2019.05.29.16:25:42 Progress: Parameterizing connections
+Info (12250): 2019.05.29.16:25:42 Progress: Validating
+Info (12250): 2019.05.29.16:25:44 Progress: Done reading input file
 Warning (12251): Adc_qsys.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
 Warning (12251): Adc_qsys.altpll_0: altpll_0.phasedone_conduit must be exported, or connected to a matching conduit.
 Warning (12251): Adc_qsys.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
@@ -2044,10 +2044,10 @@ Info (21057): Implemented 1945 device resources after synthesis - the final reso
     Info (21064): Implemented 12 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 215 warnings
-    Info: Peak virtual memory: 1092 megabytes
-    Info: Processing ended: Wed May 29 16:03:33 2019
+    Info: Peak virtual memory: 1097 megabytes
+    Info: Processing ended: Wed May 29 16:26:07 2019
     Info: Elapsed time: 00:00:52
-    Info: Total CPU time (on all processors): 00:01:54
+    Info: Total CPU time (on all processors): 00:01:43
 
 
 +------------------------------------------+

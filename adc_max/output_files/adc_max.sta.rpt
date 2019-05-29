@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for adc_max
-Wed May 29 16:05:10 2019
+Wed May 29 16:27:25 2019
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -118,8 +118,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                                     ; Status ; Read at                  ;
 +-----------------------------------------------------------------------------------+--------+--------------------------+
-; /home/lucas/vhdl/adc_max/db/ip/adc_qsys/submodules/altera_modular_adc_control.sdc ; OK     ; Wed May 29 16:05:01 2019 ;
-; /home/lucas/vhdl/adc_max/db/ip/adc_qsys/submodules/altera_reset_controller.sdc    ; OK     ; Wed May 29 16:05:02 2019 ;
+; /home/lucas/vhdl/adc_max/db/ip/adc_qsys/submodules/altera_modular_adc_control.sdc ; OK     ; Wed May 29 16:27:17 2019 ;
+; /home/lucas/vhdl/adc_max/db/ip/adc_qsys/submodules/altera_reset_controller.sdc    ; OK     ; Wed May 29 16:27:17 2019 ;
 +-----------------------------------------------------------------------------------+--------+--------------------------+
 
 
@@ -1684,7 +1684,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Wed May 29 16:05:00 2019
+    Info: Processing started: Wed May 29 16:27:15 2019
 Info: Command: quartus_sta adc_max -c adc_max
 Info: qsta_default_script.tcl version: #11
 Warning (20013): Ignored assignments for entity "de0_lite" -- entity does not exist in design
@@ -1862,8 +1862,8 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 56 warnings
-    Info: Peak virtual memory: 935 megabytes
-    Info: Processing ended: Wed May 29 16:05:10 2019
+    Info: Peak virtual memory: 933 megabytes
+    Info: Processing ended: Wed May 29 16:27:25 2019
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:10
 

@@ -258,7 +258,7 @@
   <parameter name="use_ch7" value="false" />
   <parameter name="use_ch8" value="false" />
   <parameter name="use_ch9" value="true" />
-  <parameter name="use_tsd" value="false" />
+  <parameter name="use_tsd" value="true" />
  </module>
  <module name="altpll_0" kind="altpll" version="15.0" enabled="1">
   <parameter name="AUTO_DEVICE_FAMILY" value="MAX 10" />

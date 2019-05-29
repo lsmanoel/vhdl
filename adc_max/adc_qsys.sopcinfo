@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="adc_qsys" kind="adc_qsys" version="1.0" fabric="QSYS">
  <!-- Format version 15.0 145 (Future versions may contain additional information.) -->
- <!-- 2019.05.29.16:03:09 -->
+ <!-- 2019.05.29.16:25:45 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1559156589</value>
+  <value>1559157945</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -192,7 +192,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.USE_TSD</name>
-   <value>0</value>
+   <value>1</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.VREF</name>
@@ -396,7 +396,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="use_tsd">
    <type>boolean</type>
-   <value>false</value>
+   <value>true</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>

@@ -4,8 +4,8 @@ Progress: Loading adc_max/adc_qsys.qsys
 Progress: Reading input file
 Progress: Adding adc_0 [altera_modular_adc 15.0]
 Progress: Parameterizing module adc_0
-Progress: Adding altpll_sys [altpll 15.0]
-Progress: Parameterizing module altpll_sys
+Progress: Adding altpll_0 [altpll 15.0]
+Progress: Parameterizing module altpll_0
 Progress: Adding clk_50 [clock_source 15.0]
 Progress: Parameterizing module clk_50
 Progress: Adding clock_bridge_sys [altera_clock_bridge 15.0]
@@ -14,21 +14,9 @@ Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
-Warning: adc_qsys.altpll_sys: altpll_sys.areset_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.phasestep_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.scandone_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.phasedone_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.c4_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.phaseupdown_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.c3_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.c2_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.scandata_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.configupdate_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.scandataout_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.scanclk_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.phasecounterselect_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.scanclkena_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.pll_slave must be connected to an Avalon-MM master
+Warning: adc_qsys.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
+Warning: adc_qsys.altpll_0: altpll_0.phasedone_conduit must be exported, or connected to a matching conduit.
+Warning: adc_qsys.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
 Info: ip-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
@@ -38,8 +26,8 @@ Progress: Loading adc_max/adc_qsys.qsys
 Progress: Reading input file
 Progress: Adding adc_0 [altera_modular_adc 15.0]
 Progress: Parameterizing module adc_0
-Progress: Adding altpll_sys [altpll 15.0]
-Progress: Parameterizing module altpll_sys
+Progress: Adding altpll_0 [altpll 15.0]
+Progress: Parameterizing module altpll_0
 Progress: Adding clk_50 [clock_source 15.0]
 Progress: Parameterizing module clk_50
 Progress: Adding clock_bridge_sys [altera_clock_bridge 15.0]
@@ -48,35 +36,14 @@ Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
-Warning: adc_qsys.altpll_sys: altpll_sys.areset_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.phasestep_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.scandone_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.phasedone_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.c4_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.phaseupdown_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.c3_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.c2_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.scandata_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.configupdate_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.scandataout_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.scanclk_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.phasecounterselect_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.scanclkena_conduit must be exported, or connected to a matching conduit.
-Warning: adc_qsys.altpll_sys: altpll_sys.pll_slave must be connected to an Avalon-MM master
+Warning: adc_qsys.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
+Warning: adc_qsys.altpll_0: altpll_0.phasedone_conduit must be exported, or connected to a matching conduit.
+Warning: adc_qsys.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
 Info: adc_qsys: Generating adc_qsys "adc_qsys" for QUARTUS_SYNTH
 Info: adc_0: "adc_qsys" instantiated altera_modular_adc "adc_0"
-Info: altpll_sys: Error while generating adc_qsys_altpll_sys.v : 1 : Illegal port or parameter name phaseupdown Illegal port or parameter name scandone Illegal port or parameter name scanclk Illegal port or parameter name scanclkena Illegal port or parameter name scandataout Illegal port or parameter name configupdate Illegal port or parameter name phasestep Illegal port or parameter name scandata child process exited abnormally
-Info: altpll_sys: Illegal port or parameter name phaseupdown Illegal port or parameter name scandone Illegal port or parameter name scanclk Illegal port or parameter name scanclkena Illegal port or parameter name scandataout Illegal port or parameter name configupdate Illegal port or parameter name phasestep Illegal port or parameter name scandata child process exited abnormally     while executing "exec /home/lucas/ssd2/Altera/quartus/linux64/clearbox altpll_avalon device_family=MAX10 CBX_FILE=adc_qsys_altpll_sys.v -f cbxcmdln_1558957099939447"     ("eval" body line 1)     invoked from within "eval exec $cbx_cmd "
-Error: Can't continue processing -- expected file /tmp/alt8043_5573425961064177621.dir/0001_sopcgen/adc_qsys_altpll_sys.v is missing
-Warning: Quartus II 64-Bit Generate HDL Interface was unsuccessful. 1 error, 0 warnings
-Error:     Peak virtual memory: 1192 megabytes
-Error:     Processing ended: Mon May 27 08:38:22 2019
-Error:     Elapsed time: 00:00:00
-Error:     Total CPU time (on all processors): 00:00:01
-Error: altpll_sys: File /tmp/alt8043_5573425961064177621.dir/0001_sopcgen/adc_qsys_altpll_sys.v written by generation callback did not contain a module called adc_qsys_altpll_sys
-Error: altpll_sys: /tmp/alt8043_5573425961064177621.dir/0001_sopcgen/adc_qsys_altpll_sys.v (No such file or directory)
-Info: altpll_sys: "adc_qsys" instantiated altpll "altpll_sys"
-Error: Generation stopped, 3 or more modules remaining
-Info: adc_qsys: Done "adc_qsys" with 5 modules, 2 files
-Error: ip-generate failed with exit code 1: 8 Errors, 16 Warnings
+Info: altpll_0: "adc_qsys" instantiated altpll "altpll_0"
+Info: rst_controller: "adc_qsys" instantiated altera_reset_controller "rst_controller"
+Info: control_internal: "adc_0" instantiated altera_modular_adc_control "control_internal"
+Info: adc_qsys: Done "adc_qsys" with 5 modules, 13 files
+Info: ip-generate succeeded.
 Info: Finished: Create HDL design files for synthesis
