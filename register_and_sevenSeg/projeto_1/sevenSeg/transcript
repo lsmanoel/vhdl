@@ -1,0 +1,1938 @@
+do tb_sevenSegROM.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:59:30 on May 26,2019
+# vcom -reportprogress 300 sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegROM
+# -- Compiling architecture rtl of sevenSegROM
+# End time: 10:59:31 on May 26,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 10:59:31 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSeg
+# -- Compiling architecture waveform of tb_sevenSeg
+# ** Error: tb_sevenSegROM.vhd(73): (vcom-1294) Declaration with designator "q_integer" already exists in this region.
+# ** =====> Prior declaration of "q_integer" is at tb_sevenSegROM.vhd(67).
+# ** Error: tb_sevenSegROM.vhd(74): (vcom-1294) Declaration with designator "q_unsigned" already exists in this region.
+# ** =====> Prior declaration of "q_unsigned" is at tb_sevenSegROM.vhd(68).
+# ** Error: tb_sevenSegROM.vhd(75): (vcom-1294) Declaration with designator "q_logic_vector" already exists in this region.
+# ** =====> Prior declaration of "q_logic_vector" is at tb_sevenSegROM.vhd(69).
+# ** Error: tb_sevenSegROM.vhd(126): Illegal target for signal assignment.
+# ** Error: tb_sevenSegROM.vhd(126): (vcom-1136) Unknown identifier "dot_logic".
+# ** Error: tb_sevenSegROM.vhd(154): (vcom-1136) Unknown identifier "reg3232_q_logic_vector".
+# ** Error: tb_sevenSegROM.vhd(155): (vcom-1136) Unknown identifier "reg32n_q_logic_vector".
+# ** Error: tb_sevenSegROM.vhd(164): VHDL Compiler exiting
+# End time: 10:59:32 on May 26,2019, Elapsed time: 0:00:01
+# Errors: 8, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegROM.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_sevenSegROM.vhd"
+do tb_sevenSegROM.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:06:40 on May 26,2019
+# vcom -reportprogress 300 sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegROM
+# -- Compiling architecture rtl of sevenSegROM
+# End time: 11:06:40 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:06:40 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSeg
+# -- Compiling architecture waveform of tb_sevenSeg
+# ** Error: tb_sevenSegROM.vhd(126): Illegal target for signal assignment.
+# ** Error: tb_sevenSegROM.vhd(126): (vcom-1136) Unknown identifier "dot_logic".
+# ** Error: tb_sevenSegROM.vhd(155): near ";": syntax error
+# ** Error: tb_sevenSegROM.vhd(156): near ";": syntax error
+# ** Error: tb_sevenSegROM.vhd(157): near ";": syntax error
+# ** Error: tb_sevenSegROM.vhd(158): near ";": syntax error
+# ** Error: tb_sevenSegROM.vhd(159): near ";": syntax error
+# ** Error: tb_sevenSegROM.vhd(154): (vcom-1167) Index value 9 (of type ieee.std_logic_1164.STD_LOGIC_VECTOR) is out of range 4 downto 0.
+# ** Error: tb_sevenSegROM.vhd(155): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(156): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(157): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(158): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(159): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(168): VHDL Compiler exiting
+# End time: 11:06:40 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 14, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegROM.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_sevenSegROM.vhd"
+do tb_sevenSegROM.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:07:07 on May 26,2019
+# vcom -reportprogress 300 sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegROM
+# -- Compiling architecture rtl of sevenSegROM
+# End time: 11:07:07 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:07:07 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSeg
+# -- Compiling architecture waveform of tb_sevenSeg
+# ** Error: tb_sevenSegROM.vhd(113): near ";": syntax error
+# ** Error: tb_sevenSegROM.vhd(114): near ";": syntax error
+# ** Error: tb_sevenSegROM.vhd(115): near ";": syntax error
+# ** Error: tb_sevenSegROM.vhd(116): near ";": syntax error
+# ** Error: tb_sevenSegROM.vhd(117): near ";": syntax error
+# ** Error: tb_sevenSegROM.vhd(112): (vcom-1167) Index value 9 (of type ieee.std_logic_1164.STD_LOGIC_VECTOR) is out of range 4 downto 0.
+# ** Error: tb_sevenSegROM.vhd(113): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(114): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(115): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(116): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(117): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(128): VHDL Compiler exiting
+# End time: 11:07:07 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 12, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegROM.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_sevenSegROM.vhd"
+do tb_sevenSegROM.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:07:20 on May 26,2019
+# vcom -reportprogress 300 sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegROM
+# -- Compiling architecture rtl of sevenSegROM
+# End time: 11:07:20 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:07:20 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSeg
+# -- Compiling architecture waveform of tb_sevenSeg
+# ** Error: tb_sevenSegROM.vhd(112): (vcom-1167) Index value 9 (of type ieee.std_logic_1164.STD_LOGIC_VECTOR) is out of range 4 downto 0.
+# ** Error: tb_sevenSegROM.vhd(113): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(114): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(115): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(116): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(117): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(128): VHDL Compiler exiting
+# End time: 11:07:20 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegROM.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_sevenSegROM.vhd"
+do tb_sevenSegROM.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:10:53 on May 26,2019
+# vcom -reportprogress 300 sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegROM
+# -- Compiling architecture rtl of sevenSegROM
+# End time: 11:10:53 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:10:53 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSeg
+# -- Compiling architecture waveform of tb_sevenSeg
+# ** Error: tb_sevenSegROM.vhd(113): near ";": syntax error
+# ** Error: tb_sevenSegROM.vhd(114): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(115): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(116): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(117): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(128): VHDL Compiler exiting
+# End time: 11:10:53 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegROM.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_sevenSegROM.vhd"
+do tb_sevenSegROM.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:11:05 on May 26,2019
+# vcom -reportprogress 300 sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegROM
+# -- Compiling architecture rtl of sevenSegROM
+# End time: 11:11:05 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:11:05 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSeg
+# -- Compiling architecture waveform of tb_sevenSeg
+# ** Error: tb_sevenSegROM.vhd(114): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(115): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(116): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(117): (vcom-1272) Length of expected is 5; length of actual is 32.
+# ** Error: tb_sevenSegROM.vhd(128): VHDL Compiler exiting
+# End time: 11:11:05 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegROM.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_sevenSegROM.vhd"
+do tb_sevenSegROM.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:11:51 on May 26,2019
+# vcom -reportprogress 300 sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegROM
+# -- Compiling architecture rtl of sevenSegROM
+# End time: 11:11:51 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:11:51 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSeg
+# -- Compiling architecture waveform of tb_sevenSeg
+# End time: 11:11:52 on May 26,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 11:11:52 on May 26,2019
+# ** Error: (vsim-3170) Could not find '/home/lucas/vhdl/register_and_sevenSeg/sevenSeg/work.tb_sevenSegROM'.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./tb_sevenSegROM.do PAUSED at line 9
+do tb_sevenSegROM.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:14:26 on May 26,2019
+# vcom -reportprogress 300 sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegROM
+# -- Compiling architecture rtl of sevenSegROM
+# End time: 11:14:27 on May 26,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:14:27 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSeg
+# -- Compiling architecture waveform of tb_sevenSeg
+# End time: 11:14:27 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: (vsim-3170) Could not find '/home/lucas/vhdl/register_and_sevenSeg/sevenSeg/work.tb_sevenSegROM'.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./tb_sevenSegROM.do PAUSED at line 9
+ls
+# sevenSegROM.vhd
+# sevenSeg.vhd
+# tb_sevenSeg.do
+# tb_sevenSegROM.do
+# tb_sevenSegROM.vhd
+# tb_sevenSeg.vhd
+# transcript
+# vsim.wlf
+# wave.ps
+# work
+do tb_sevenSegROM.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:16:35 on May 26,2019
+# vcom -reportprogress 300 sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegROM
+# -- Compiling architecture rtl of sevenSegROM
+# End time: 11:16:35 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:16:35 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegROM
+# -- Compiling architecture waveform of tb_sevenSegROM
+# End time: 11:16:35 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevensegrom(waveform)
+# Loading work.sevensegrom(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Fatal: (vsim-3421) Value -127 is out of range 0 to 255.
+#    Time: 0 ns  Iteration: 5  Process: /tb_sevensegrom/hex_display_array(5)/line__102 File: tb_sevenSegROM.vhd
+# Fatal error in Generate hex_display_array at tb_sevenSegROM.vhd line 102
+# 
+# HDL call sequence:
+# Stopped at tb_sevenSegROM.vhd 102 Generate hex_display_array
+# 
+# 0 ns
+# 1004 ns
+# printing wave to file wave.ps
+do tb_sevenSegROM.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:21:09 on May 26,2019
+# vcom -reportprogress 300 sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegROM
+# -- Compiling architecture rtl of sevenSegROM
+# End time: 11:21:09 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:21:09 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegROM
+# -- Compiling architecture waveform of tb_sevenSegROM
+# End time: 11:21:09 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 11:21:10 on May 26,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevensegrom(waveform)
+# Loading work.sevensegrom(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Fatal: (vsim-3421) Value -127 is out of range 0 to 255.
+#    Time: 0 ns  Iteration: 5  Process: /tb_sevensegrom/hex_display_array(5)/line__103 File: tb_sevenSegROM.vhd
+# Fatal error in Generate hex_display_array at tb_sevenSegROM.vhd line 103
+# 
+# HDL call sequence:
+# Stopped at tb_sevenSegROM.vhd 103 Generate hex_display_array
+# 
+# 0 ns
+# 2770 ns
+# printing wave to file wave.ps
+do tb_sevenSegROM.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:23:46 on May 26,2019
+# vcom -reportprogress 300 sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegROM
+# -- Compiling architecture rtl of sevenSegROM
+# End time: 11:23:46 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:23:46 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegROM
+# -- Compiling architecture waveform of tb_sevenSegROM
+# End time: 11:23:46 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 11:23:46 on May 26,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevensegrom(waveform)
+# Loading work.sevensegrom(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -92 is not in bounds of NATURAL.
+#    Time: 20 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -52 is not in bounds of NATURAL.
+#    Time: 20 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -122 is not in bounds of NATURAL.
+#    Time: 20 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -110 is not in bounds of NATURAL.
+#    Time: 20 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -92 is not in bounds of NATURAL.
+#    Time: 20 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(0)
+# 0 ns
+# 1050 ns
+# printing wave to file wave.ps
+do tb_sevenSegROM.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:25:09 on May 26,2019
+# vcom -reportprogress 300 sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegROM
+# -- Compiling architecture rtl of sevenSegROM
+# End time: 11:25:09 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:25:09 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegROM
+# -- Compiling architecture waveform of tb_sevenSegROM
+# End time: 11:25:09 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 11:25:09 on May 26,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevensegrom(waveform)
+# Loading work.sevensegrom(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -92 is not in bounds of NATURAL.
+#    Time: 20 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -52 is not in bounds of NATURAL.
+#    Time: 20 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -122 is not in bounds of NATURAL.
+#    Time: 20 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -110 is not in bounds of NATURAL.
+#    Time: 20 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(2)
+# 0 ns
+# 1050 ns
+# printing wave to file wave.ps
+do tb_sevenSegROM.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:23:46 on May 26,2019
+# vcom -reportprogress 300 sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegROM
+# -- Compiling architecture rtl of sevenSegROM
+# End time: 12:23:46 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:23:46 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegROM
+# -- Compiling architecture waveform of tb_sevenSegROM
+# End time: 12:23:46 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 12:23:47 on May 26,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevensegrom(waveform)
+# Loading work.sevensegrom(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(2)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(1)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(0)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -92 is not in bounds of NATURAL.
+#    Time: 20 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(5)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -52 is not in bounds of NATURAL.
+#    Time: 20 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(4)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -122 is not in bounds of NATURAL.
+#    Time: 20 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(3)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -110 is not in bounds of NATURAL.
+#    Time: 20 ns  Iteration: 5  Region: /tb_sevensegrom/hex_display_array(2)
+# 0 ns
+# 1050 ns
+# printing wave to file wave.ps
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:21:40 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# ** Error: sevenSegArray.vhd(97): Illegal concurrent statement.
+# ** Error: sevenSegArray.vhd(131): (vcom-1136) Unknown identifier "clock_50_0_logic".
+# ** Error: sevenSegArray.vhd(134): Signal "int2dig_dign_integer_array" is type int2dig_dign_std_integer_array; expecting type sevenSegROM_data_std_logic_vector_array.
+# ** Error: sevenSegArray.vhd(145): VHDL Compiler exiting
+# End time: 16:21:40 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegArray.do line 5
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom sevenSegArray.vhd"
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:22:54 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# ** Error: sevenSegArray.vhd(97): Illegal concurrent statement.
+# ** Error: sevenSegArray.vhd(131): (vcom-1136) Unknown identifier "clock_50_0_logic".
+# ** Error: sevenSegArray.vhd(134): Signal "int2dig_dign_integer_array" is type int2dig_dign_std_integer_array; expecting type sevenSegROM_data_std_logic_vector_array.
+# ** Error: sevenSegArray.vhd(145): VHDL Compiler exiting
+# End time: 16:22:54 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegArray.do line 5
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom sevenSegArray.vhd"
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:23:19 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# ** Error: sevenSegArray.vhd(97): Illegal concurrent statement.
+# ** Error: sevenSegArray.vhd(131): (vcom-1136) Unknown identifier "clock_50_0_logic".
+# ** Error: sevenSegArray.vhd(134): Signal "int2dig_dign_integer_array" is type int2dig_dign_std_integer_array; expecting type sevenSegROM_data_std_logic_vector_array.
+# ** Error: sevenSegArray.vhd(145): VHDL Compiler exiting
+# End time: 16:23:19 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegArray.do line 5
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom sevenSegArray.vhd"
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:25:13 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# ** Error: sevenSegArray.vhd(97): Illegal concurrent statement.
+# ** Error: sevenSegArray.vhd(131): (vcom-1136) Unknown identifier "clock_50_0_logic".
+# ** Error: sevenSegArray.vhd(134): Signal "int2dig_dign_integer_array" is type int2dig_dign_std_integer_array; expecting type sevenSegROM_data_std_logic_vector_array.
+# ** Error: sevenSegArray.vhd(145): VHDL Compiler exiting
+# End time: 16:25:13 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegArray.do line 5
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom sevenSegArray.vhd"
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:26:11 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# ** Error: sevenSegArray.vhd(97): FOR GENERATE statement must have a label.
+# ** Error: sevenSegArray.vhd(131): (vcom-1136) Unknown identifier "clock_50_0_logic".
+# ** Error: sevenSegArray.vhd(134): Signal "int2dig_dign_integer_array" is type int2dig_dign_std_integer_array; expecting type sevenSegROM_data_std_logic_vector_array.
+# ** Error: sevenSegArray.vhd(145): VHDL Compiler exiting
+# End time: 16:26:11 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegArray.do line 5
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom sevenSegArray.vhd"
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:27:27 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# ** Error: sevenSegArray.vhd(131): (vcom-1136) Unknown identifier "clock_50_0_logic".
+# ** Error: sevenSegArray.vhd(134): Signal "int2dig_dign_integer_array" is type int2dig_dign_std_integer_array; expecting type sevenSegROM_data_std_logic_vector_array.
+# ** Error: sevenSegArray.vhd(145): VHDL Compiler exiting
+# End time: 16:27:27 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegArray.do line 5
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom sevenSegArray.vhd"
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:27:49 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# ** Error: sevenSegArray.vhd(134): Signal "int2dig_dign_integer_array" is type int2dig_dign_std_integer_array; expecting type sevenSegROM_data_std_logic_vector_array.
+# ** Error: sevenSegArray.vhd(145): VHDL Compiler exiting
+# End time: 16:27:49 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegArray.do line 5
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom sevenSegArray.vhd"
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:28:51 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# ** Error: sevenSegArray.vhd(134): Signal "int2dig_dign_logic_vector_array" is type int2dig_dign_std_logic_vector_array; expecting type sevenSegROM_data_std_logic_vector_array.
+# ** Error: sevenSegArray.vhd(145): VHDL Compiler exiting
+# End time: 16:28:51 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegArray.do line 5
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom sevenSegArray.vhd"
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:32:26 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# ** Error: sevenSegArray.vhd(109): Target type std.STANDARD.INTEGER in signal assignment is different from expression type ieee.NUMERIC_STD.UNRESOLVED_UNSIGNED.
+# ** Error: sevenSegArray.vhd(109): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: sevenSegArray.vhd(110): No feasible entries for subprogram "TO_INTEGER".
+# ** Error: sevenSegArray.vhd(130): Signal "int2dig_dign_logic_vector_array" is type int2dig_dign_std_logic_vector_array; expecting type int2dig_dign_std_integer_array.
+# ** Error: sevenSegArray.vhd(141): VHDL Compiler exiting
+# End time: 16:32:26 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegArray.do line 5
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom sevenSegArray.vhd"
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:33:06 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# End time: 16:33:06 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:33:06 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegArray
+# -- Compiling architecture waveform of tb_sevenSegArray
+# ** Error: tb_sevenSegArray.vhd(102): near ";": expecting ',' or ')'
+# ** Error: tb_sevenSegArray.vhd(114): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(117): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(120): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(123): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(126): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(129): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(130): (vcom-1136) Unknown identifier "sevenSegArray_HEX5_5unsigned".
+# ** Error: tb_sevenSegArray.vhd(140): Physical unit hidden by declaration of 'HEX0' at line 19.
+# ** Error: tb_sevenSegArray.vhd(140): No feasible entries for infix operator "<=".
+# ** Error: tb_sevenSegArray.vhd(140): Type error resolving infix expression "<=" as type std.STANDARD.INTEGER.
+# ** Error: tb_sevenSegArray.vhd(147): VHDL Compiler exiting
+# End time: 16:33:06 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 12, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegArray.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_sevenSegArray.vhd"
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:34:09 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# End time: 16:34:09 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:34:09 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegArray
+# -- Compiling architecture waveform of tb_sevenSegArray
+# ** Error: tb_sevenSegArray.vhd(102): near ";": expecting ',' or ')'
+# ** Error: tb_sevenSegArray.vhd(114): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(117): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(120): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(123): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(126): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(129): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(130): (vcom-1136) Unknown identifier "sevenSegArray_HEX5_5unsigned".
+# ** Error: tb_sevenSegArray.vhd(140): Physical unit hidden by declaration of 'HEX0' at line 19.
+# ** Error: tb_sevenSegArray.vhd(140): No feasible entries for infix operator "<=".
+# ** Error: tb_sevenSegArray.vhd(140): Type error resolving infix expression "<=" as type std.STANDARD.INTEGER.
+# ** Error: tb_sevenSegArray.vhd(147): VHDL Compiler exiting
+# End time: 16:34:09 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 12, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegArray.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_sevenSegArray.vhd"
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:35:35 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# End time: 16:35:36 on May 26,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:35:36 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegArray
+# -- Compiling architecture waveform of tb_sevenSegArray
+# ** Error: tb_sevenSegArray.vhd(114): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(117): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(120): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(123): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(126): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(129): Illegal type conversion from std.STANDARD.INTEGER to ieee.NUMERIC_STD.UNSIGNED (numeric to array).
+# ** Error: tb_sevenSegArray.vhd(130): (vcom-1136) Unknown identifier "sevenSegArray_HEX5_5unsigned".
+# ** Error: tb_sevenSegArray.vhd(140): Physical unit hidden by declaration of 'HEX0' at line 19.
+# ** Error: tb_sevenSegArray.vhd(140): No feasible entries for infix operator "<=".
+# ** Error: tb_sevenSegArray.vhd(140): Type error resolving infix expression "<=" as type std.STANDARD.INTEGER.
+# ** Error: tb_sevenSegArray.vhd(147): VHDL Compiler exiting
+# End time: 16:35:36 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegArray.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_sevenSegArray.vhd"
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:36:44 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# End time: 16:36:44 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:36:44 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegArray
+# -- Compiling architecture waveform of tb_sevenSegArray
+# ** Error: tb_sevenSegArray.vhd(130): (vcom-1136) Unknown identifier "sevenSegArray_HEX5_5unsigned".
+# ** Error: tb_sevenSegArray.vhd(140): Physical unit hidden by declaration of 'HEX0' at line 19.
+# ** Error: tb_sevenSegArray.vhd(140): No feasible entries for infix operator "<=".
+# ** Error: tb_sevenSegArray.vhd(140): Type error resolving infix expression "<=" as type std.STANDARD.INTEGER.
+# ** Error: tb_sevenSegArray.vhd(147): VHDL Compiler exiting
+# End time: 16:36:44 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegArray.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_sevenSegArray.vhd"
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:37:07 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# End time: 16:37:07 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:37:07 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegArray
+# -- Compiling architecture waveform of tb_sevenSegArray
+# ** Error: tb_sevenSegArray.vhd(130): (vcom-1136) Unknown identifier "sevenSegArray_HEX5_5_unsigned".
+# ** Error: tb_sevenSegArray.vhd(140): Physical unit hidden by declaration of 'HEX0' at line 19.
+# ** Error: tb_sevenSegArray.vhd(140): No feasible entries for infix operator "<=".
+# ** Error: tb_sevenSegArray.vhd(140): Type error resolving infix expression "<=" as type std.STANDARD.INTEGER.
+# ** Error: tb_sevenSegArray.vhd(147): VHDL Compiler exiting
+# End time: 16:37:07 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegArray.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_sevenSegArray.vhd"
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:37:20 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# End time: 16:37:20 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:37:20 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegArray
+# -- Compiling architecture waveform of tb_sevenSegArray
+# ** Error: tb_sevenSegArray.vhd(140): Physical unit hidden by declaration of 'HEX0' at line 19.
+# ** Error: tb_sevenSegArray.vhd(140): No feasible entries for infix operator "<=".
+# ** Error: tb_sevenSegArray.vhd(140): Type error resolving infix expression "<=" as type std.STANDARD.INTEGER.
+# ** Error: tb_sevenSegArray.vhd(147): VHDL Compiler exiting
+# End time: 16:37:20 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./tb_sevenSegArray.do line 6
+# /home/lucas/ssd2/Altera/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom tb_sevenSegArray.vhd"
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:37:39 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# End time: 16:37:39 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:37:39 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegArray
+# -- Compiling architecture waveform of tb_sevenSegArray
+# End time: 16:37:39 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 16:37:39 on May 26,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevensegarray(waveform)
+# Loading work.sevensegarray(waveform)
+# ** Warning: (vsim-3473) Component instance "int2dig_vhd : int2dig" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray/sevenSegArray_vhd File: sevenSegArray.vhd
+# Loading work.sevensegrom(rtl)
+# ** Fatal: (vsim-3734) Index value 6 is out of range 5 downto 0.
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/load_data_ctrl(6) File: sevenSegArray.vhd Line: 122
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./tb_sevenSegArray.do PAUSED at line 9
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:38:47 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# End time: 16:38:47 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:38:47 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegArray
+# -- Compiling architecture waveform of tb_sevenSegArray
+# End time: 16:38:47 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevensegarray(waveform)
+# Loading work.sevensegarray(waveform)
+# ** Warning: (vsim-3473) Component instance "int2dig_vhd : int2dig" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray/sevenSegArray_vhd File: sevenSegArray.vhd
+# Loading work.sevensegrom(rtl)
+# ** Fatal: (vsim-3734) Index value 6 is out of range 5 downto 0.
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/load_data_ctrl(6) File: sevenSegArray.vhd Line: 122
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./tb_sevenSegArray.do PAUSED at line 9
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:41:28 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# End time: 16:41:28 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:41:28 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegArray
+# -- Compiling architecture waveform of tb_sevenSegArray
+# End time: 16:41:28 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevensegarray(waveform)
+# Loading work.sevensegarray(waveform)
+# ** Warning: (vsim-3473) Component instance "int2dig_vhd : int2dig" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray/sevenSegArray_vhd File: sevenSegArray.vhd
+# Loading work.sevensegrom(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Error: (vsim-86) Arg Value -2147483648 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(5)
+# ** Error: (vsim-86) Arg Value -2147483648 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray/sevenSegArray_vhd
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# 0 ns
+# 1050 ns
+# printing wave to file wave.ps
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:44:50 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# End time: 16:44:50 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:44:50 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegArray
+# -- Compiling architecture waveform of tb_sevenSegArray
+# End time: 16:44:50 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 16:44:50 on May 26,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevensegarray(waveform)
+# Loading work.sevensegarray(waveform)
+# ** Warning: (vsim-3473) Component instance "int2dig_vhd : int2dig" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray/sevenSegArray_vhd File: sevenSegArray.vhd
+# Loading work.sevensegrom(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Error: (vsim-86) Arg Value -2147483648 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(5)
+# ** Error: (vsim-86) Arg Value -2147483648 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray/sevenSegArray_vhd
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# 0 ns
+# 1050 ns
+# printing wave to file wave.ps
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:47:36 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# End time: 16:47:36 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:47:36 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegArray
+# -- Compiling architecture waveform of tb_sevenSegArray
+# End time: 16:47:36 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 16:47:36 on May 26,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevensegarray(waveform)
+# Loading work.sevensegarray(waveform)
+# ** Warning: (vsim-3473) Component instance "int2dig_vhd : int2dig" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray/sevenSegArray_vhd File: sevenSegArray.vhd
+# Loading work.sevensegrom(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Error: (vsim-86) Arg Value -2147483648 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(5)
+# ** Error: (vsim-86) Arg Value -2147483648 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray/sevenSegArray_vhd
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# 0 ns
+# 1050 ns
+# printing wave to file wave.ps
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:48:37 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# End time: 16:48:37 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:48:37 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegArray
+# -- Compiling architecture waveform of tb_sevenSegArray
+# End time: 16:48:37 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 16:48:38 on May 26,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevensegarray(waveform)
+# Loading work.sevensegarray(waveform)
+# ** Warning: (vsim-3473) Component instance "int2dig_vhd : int2dig" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray/sevenSegArray_vhd File: sevenSegArray.vhd
+# Loading work.sevensegrom(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Error: (vsim-86) Arg Value -2147483648 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(5)
+# ** Error: (vsim-86) Arg Value -2147483648 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray/sevenSegArray_vhd
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# 0 ns
+# 1050 ns
+# printing wave to file wave.ps
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:52:19 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# End time: 16:52:19 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:52:19 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegArray
+# -- Compiling architecture waveform of tb_sevenSegArray
+# End time: 16:52:19 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 16:52:20 on May 26,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevensegarray(waveform)
+# Loading work.sevensegarray(waveform)
+# ** Warning: (vsim-3473) Component instance "int2dig_vhd : int2dig" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray/sevenSegArray_vhd File: sevenSegArray.vhd
+# Loading work.sevensegrom(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Error: (vsim-86) Arg Value -2147483648 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(5)
+# ** Error: (vsim-86) Arg Value -2147483648 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray/sevenSegArray_vhd
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# 0 ns
+# 1050 ns
+# printing wave to file wave.ps
+do tb_sevenSegArray.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:52:53 on May 26,2019
+# vcom -reportprogress 300 sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSegArray
+# -- Compiling architecture waveform of sevenSegArray
+# End time: 16:52:53 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:52:53 on May 26,2019
+# vcom -reportprogress 300 tb_sevenSegArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_sevenSegArray
+# -- Compiling architecture waveform of tb_sevenSegArray
+# End time: 16:52:53 on May 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 16:52:54 on May 26,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_sevensegarray(waveform)
+# Loading work.sevensegarray(waveform)
+# ** Warning: (vsim-3473) Component instance "int2dig_vhd : int2dig" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray/sevenSegArray_vhd File: sevenSegArray.vhd
+# Loading work.sevensegrom(rtl)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Error: (vsim-86) Arg Value -2147483648 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_sevensegarray/sevenSegArray_vhd/int2dig_conversion(5)
+# ** Error: (vsim-86) Arg Value -2147483648 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_sevensegarray/sevenSegArray_vhd
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(5)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(4)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(3)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(2)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(1)
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -128 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 6  Region: /tb_sevensegarray/sevenSegArray_vhd/hex_display_array(0)
+# 0 ns
+# 1050 ns
+# printing wave to file wave.ps
+# End time: 17:28:49 on May 26,2019, Elapsed time: 0:35:55
+# Errors: 2, Warnings: 38

@@ -1,0 +1,290 @@
+do tb_de0_lite.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:38:04 on May 25,2019
+# vcom -reportprogress 300 reg3232.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg3232
+# -- Compiling architecture rtl of reg3232
+# End time: 12:38:04 on May 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:38:04 on May 25,2019
+# vcom -reportprogress 300 sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sevenSeg
+# -- Compiling architecture rtl of sevenSeg
+# End time: 12:38:04 on May 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:38:04 on May 25,2019
+# vcom -reportprogress 300 de0_lite.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity de0_lite
+# -- Compiling architecture rtl of de0_lite
+# End time: 12:38:04 on May 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:38:04 on May 25,2019
+# vcom -reportprogress 300 tb_de0_lite.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_de0_lite
+# -- Compiling architecture waveform of tb_de0_lite
+# End time: 12:38:04 on May 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 12:38:04 on May 25,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_de0_lite(waveform)
+# Loading work.de0_lite(rtl)
+# Loading work.rom3232(rtl)
+# ** Warning: (vsim-3473) Component instance "sync_rom_vhd : sync_rom" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd File: de0_lite.vhd
+# Loading work.reg3232(rtl)
+# ** Warning: (vsim-3473) Component instance "reg32n_vhd : reg32n" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd File: de0_lite.vhd
+# ** Warning: (vsim-3473) Component instance "sevenSegROM_vhd : sevenSegROM" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(5) File: de0_lite.vhd
+# ** Warning: (vsim-3473) Component instance "sevenSegROM_vhd : sevenSegROM" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(4) File: de0_lite.vhd
+# ** Warning: (vsim-3473) Component instance "sevenSegROM_vhd : sevenSegROM" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(3) File: de0_lite.vhd
+# ** Warning: (vsim-3473) Component instance "sevenSegROM_vhd : sevenSegROM" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(2) File: de0_lite.vhd
+# ** Warning: (vsim-3473) Component instance "sevenSegROM_vhd : sevenSegROM" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(1) File: de0_lite.vhd
+# ** Warning: (vsim-3473) Component instance "sevenSegROM_vhd : sevenSegROM" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(0) File: de0_lite.vhd
+# ** Warning: (vsim-3473) Component instance "mixerN2_vhd : mixerN2" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd File: de0_lite.vhd
+# ** Warning: (vsim-3473) Component instance "mixerN3_vhd : mixerN3" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd File: de0_lite.vhd
+# ** Warning: (vsim-8683) Uninitialized out port /tb_de0_lite/de0_lite_vhd/DRAM_ADDR(12 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_de0_lite/de0_lite_vhd/DRAM_BA(1 downto 0) has no driver.
+# This port will contribute value (UU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_de0_lite/de0_lite_vhd/DRAM_CAS_N has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_de0_lite/de0_lite_vhd/DRAM_CKE has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_de0_lite/de0_lite_vhd/DRAM_CLK has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_de0_lite/de0_lite_vhd/DRAM_CS_N has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_de0_lite/de0_lite_vhd/DRAM_DQ(15 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_de0_lite/de0_lite_vhd/DRAM_LDQM has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_de0_lite/de0_lite_vhd/DRAM_RAS_N has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_de0_lite/de0_lite_vhd/DRAM_UDQM has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_de0_lite/de0_lite_vhd/RAM_WE_N has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_de0_lite/de0_lite_vhd/VGA_B(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_de0_lite/de0_lite_vhd/VGA_G(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_de0_lite/de0_lite_vhd/VGA_HS has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_de0_lite/de0_lite_vhd/VGA_R(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_de0_lite/de0_lite_vhd/VGA_VS has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_de0_lite/de0_lite_vhd/GSENSOR_CS_N has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_de0_lite/de0_lite_vhd/GSENSOR_SCLK has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_de0_lite/de0_lite_vhd/GSENSOR_SDI has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_de0_lite/de0_lite_vhd/GSENSOR_SDO has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_de0_lite/de0_lite_vhd/ARDUINO_IO(15 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_de0_lite/de0_lite_vhd/ARDUINO_RESET_N has no driver.
+# This port will contribute value (U) to the signal network.
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(0)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(1)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(2)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(3)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(4)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Region: /tb_de0_lite/de0_lite_vhd/hex_display_array(5)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 2  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 2  Instance: /tb_de0_lite/de0_lite_vhd
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2 is not in bounds of NATURAL.
+#    Time: 0 ns  Iteration: 5  Instance: /tb_de0_lite/de0_lite_vhd
+# 0 ns
+# 1050 ns
+# printing wave to file wave.ps
+ls
+# db
+# de0_lite.asm.rpt
+# de0_lite_assignment_defaults.qdf
+# de0_lite.cdf
+# de0_lite.done
+# de0_lite.fit.rpt
+# de0_lite.fit.smsg
+# de0_lite.fit.summary
+# de0_lite.flow.rpt
+# de0_lite.htm
+# de0_lite.jdi
+# de0_lite.map.rpt
+# de0_lite.map.summary
+# de0_lite.ooollddv
+# de0_lite.pin
+# de0_lite.pof
+# de0_lite.pti_db_list.ddb
+# de0_lite.qpf
+# de0_lite.qsf
+# de0_lite.qsf.bak
+# de0_lite.qws
+# de0_lite.sdc
+# de0_lite.sld
+# de0_lite.sof
+# de0_lite.sta.rpt
+# de0_lite.sta.summary
+# de0_lite.tis_db_list.ddb
+# de0_lite.vhd
+# de0_lite.vhd.bak
+# documentation
+# incremental_db
+# mixerN2.vhd
+# mixerN3.vhd
+# reg3232.vhd
+# reg3232.vhd.bak
+# reg32n.vhd
+# rom3232.vhd
+# sevenSegROM.vhd
+# sevenSeg.vhd
+# sync_rom.vhd
+# tb_de0_lite.do
+# tb_de0_lite.vhd
+# transcript
+# vish_stacktrace.vstf
+# vsim.wlf
+# wave.ps
+# work
+# Break key hit
+# End time: 12:38:34 on May 25,2019, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 90

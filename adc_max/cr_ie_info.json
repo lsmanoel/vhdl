@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "linux64",
+		"os_name" : "Arch Linux",
+		"os_version" : ""
+	},
+	"error" : {
+		"executable" : "quartus",
+		"comment" : "none",
+		"error_message" : "Segment Violation at 0x28",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x7fb4e3000dd4: sld_chi + 0x1cdd4 (_ZN24CHI_CONTROL_NODE_MOD_RAM10close_nodeEv + 0x10)\n\t0x7fb4e3000e2f: sld_chi + 0x1ce2f (_ZN24CHI_CONTROL_NODE_MOD_RAMD1Ev + 0x15)\n\t0x7fb4e3000eb2: sld_chi + 0x1ceb2 (_ZN26CHI_CONTROL_DEVICE_MOD_RAM20delete_current_cacheEv + 0x20)\n\t0x7fb4e3000f03: sld_chi + 0x1cf03 (_ZN26CHI_CONTROL_DEVICE_MOD_RAMD1Ev + 0x29)\n\t0x7fb446ea4e3c: sld_redq + 0x29e3c (_ZN18REDQ_DEVICE_WIDGETD2Ev + 0xbe)\n\t0x7fb446ea4e8d: sld_redq + 0x29e8d (_ZN18REDQ_DEVICE_WIDGETD0Ev + 0x9)\n\t0x7fb446e91296: sld_redq + 0x16296 (_ZN11REDQ_WIDGETD1Ev + 0x28)\n\t0x7fb446e912cf: sld_redq + 0x162cf (_ZN11REDQ_WIDGETD0Ev + 0x9)\n\t0x7fb4d512a9e7: QtCore.so.4 + 0x1b99e7 (_ZN14QObjectPrivate14deleteChildrenEv + 0x57)\n\t0x7fb4ae6fa77e: QtGui.so.4 + 0x25b77e (_ZN7QWidgetD2Ev + 0x2ae)\n\t0x7fb4aeb57e9a: QtGui.so.4 + 0x6b8e9a (_ZN9QSplitterD0Ev + 0xca)\n\t0x7fb4d512a9e7: QtCore.so.4 + 0x1b99e7 (_ZN14QObjectPrivate14deleteChildrenEv + 0x57)\n\t0x7fb4ae6fa77e: QtGui.so.4 + 0x25b77e (_ZN7QWidgetD2Ev + 0x2ae)\n\t0x7fb446e910ba: sld_redq + 0x160ba (_ZN18REDQ_LAYOUT_WIDGETD2Ev + 0x1e)\n\t0x7fb446e910cf: sld_redq + 0x160cf (_ZN18REDQ_LAYOUT_WIDGETD0Ev + 0x9)\n\t0x7fb4d512a9e7: QtCore.so.4 + 0x1b99e7 (_ZN14QObjectPrivate14deleteChildrenEv + 0x57)\n\t0x7fb4ae6fa77e: QtGui.so.4 + 0x25b77e (_ZN7QWidgetD2Ev + 0x2ae)\n\t0x7fb4e01f6e62: gcl_afcq + 0x189e62 (_ZN16AFCQ_MAIN_WINDOWD1Ev + 0x72)\n\t0x7fb4e571c86b: sys_qui + 0x9786b (_ZN13QUI_FRAME_WNDD1Ev + 0x45d)\n\t0x7fb446e91076: sld_redq + 0x16076 (_ZN14REDQ_FRAME_WNDD1Ev + 0x1e)\n\t0x7fb446e9108b: sld_redq + 0x1608b (_ZN14REDQ_FRAME_WNDD0Ev + 0x9)\n\t0x7fb4d512b2c3: QtCore.so.4 + 0x1ba2c3 (_ZN7QObject5eventEP6QEvent + 0xc3)\n\t0x7fb4ae701f8f: QtGui.so.4 + 0x262f8f (_ZN7QWidget5eventEP6QEvent + 0x7f)\n\t0x7fb4aeb1332c: QtGui.so.4 + 0x67432c (_ZN11QMainWindow5eventEP6QEvent + 0x13c)\n\t0x7fb4e01f9e6c: gcl_afcq + 0x18ce6c (_ZN16AFCQ_MAIN_WINDOW5eventEP6QEvent + 0x3e)\n\t0x7fb4ae6a3e4f: QtGui.so.4 + 0x204e4f (_ZN19QApplicationPrivate13notify_helperEP7QObjectP6QEvent + 0xaf)\n\t0x7fb4ae6aa4a3: QtGui.so.4 + 0x20b4a3 (_ZN12QApplication6notifyEP7QObjectP6QEvent + 0x183)\n\t0x7fb4d51175b4: QtCore.so.4 + 0x1a65b4 (_ZN16QCoreApplication14notifyInternalEP7QObjectP6QEvent + 0x84)\n\t0x7fb4d511b25e: QtCore.so.4 + 0x1aa25e (_ZN23QCoreApplicationPrivate16sendPostedEventsEP7QObjectiP11QThreadData + 0x26e)\n\t0x7fb4d514a313: QtCore.so.4 + 0x1d9313\n\t0x7fb4a74187b7: glib-2.0.so.0 + 0x4a7b7 (g_main_context_dispatch + 0x2a7)\n\t0x7fb4a7418a20: glib-2.0.so.0 + 0x4aa20\n\t0x7fb4a7418acc: glib-2.0.so.0 + 0x4aacc (g_main_context_iteration + 0x2c)\n\t0x7fb4d514a505: QtCore.so.4 + 0x1d9505 (_ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE + 0x65)\n\t0x7fb4ae75487f: QtGui.so.4 + 0x2b587f\n\t0x7fb4d51165c5: QtCore.so.4 + 0x1a55c5 (_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE + 0x35)\n\t0x7fb4d5116998: QtCore.so.4 + 0x1a5998 (_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE + 0x128)\n\t0x7fb4d511b7c4: QtCore.so.4 + 0x1aa7c4 (_ZN16QCoreApplication4execEv + 0xb4)\n\t   0x401ea8: quartus + 0x1ea8 (_Z8qgq_mainiPPKc + 0x68)\n\t0x7fb4b3fba7e0: ccl_msg + 0x407e0 (_Z15msg_main_threadPv + 0x10)\n\t0x7fb4b131202c: ccl_thr + 0x602c (thr_final_wrapper + 0xc)\n\t0x7fb4b3fba89f: ccl_msg + 0x4089f (_Z18msg_thread_wrapperPFPvS_ES_ + 0x62)\n\t0x7fb4b1983559: ccl_mem + 0xa559 (_Z18mem_thread_wrapperPFPvS_ES_ + 0x99)\n\t0x7fb4b1750f92: ccl_err + 0x8f92 (_Z18err_thread_wrapperPFPvS_ES_ + 0x27)\n\t0x7fb4b13123f2: ccl_thr + 0x63f2 (thr_thread_wrapper + 0x15)\n\t0x7fb4b3fbcc37: ccl_msg + 0x42c37 (_Z12msg_exe_mainiPPKcPFiiS1_E + 0xa3)\n\t   0x401f7a: quartus + 0x1f7a (main + 0x26)\n\t0x7fb4a860743a: c.so.6 + 0x2043a (__libc_start_main + 0xea)\n\t   0x401d59: quartus + 0x1d59\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "16.1.0",
+		"build" : "196",
+		"edition" : "Lite Edition"
+	}
+}

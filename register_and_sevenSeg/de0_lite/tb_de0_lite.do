@@ -2,8 +2,12 @@
 vlib work
 
 #Compila Projeto
-vcom reg3232.vhd
+vcom sram3232.vhd
+vcom sram32n.vhd
+vcom reg32.vhd
+vcom reg32n.vhd
 vcom sevenSeg.vhd
+vcom romSevenSeg.vhd
 vcom de0_lite.vhd
 vcom tb_de0_lite.vhd
 
@@ -29,35 +33,35 @@ add wave -radix binary -label sw /sw_logic_vector
 
 #------------------------------------------------------------------------------------------
 #REG3232
-add wave -radix binary -label reg3232_clock_logic /de0_lite_vhd/reg3232_clock_logic
-add wave -radix hex -label reg3232_data_logic_vector /de0_lite_vhd/reg3232_data_logic_vector
-add wave -radix dec -label reg3232_write_address_integer /de0_lite_vhd/reg3232_write_address_integer
-add wave -radix dec -label reg3232_read_address_integer /de0_lite_vhd/reg3232_read_address_integer
-add wave -radix binary -label reg3232_we_logic /de0_lite_vhd/reg3232_we_logic
-add wave -radix hex -label reg3232_q_logic_vector /de0_lite_vhd/reg3232_q_logic_vector
+add wave -radix binary -label sram3232_clock_logic /de0_lite_vhd/sram3232_clock_logic
+add wave -radix hex -label sram3232_data_logic_vector /de0_lite_vhd/sram3232_data_logic_vector
+add wave -radix dec -label sram3232_write_address_integer /de0_lite_vhd/sram3232_write_address_integer
+add wave -radix dec -label sram3232_read_address_integer /de0_lite_vhd/sram3232_read_address_integer
+add wave -radix binary -label sram3232_we_logic /de0_lite_vhd/sram3232_we_logic
+add wave -radix hex -label sram3232_q_logic_vector /de0_lite_vhd/sram3232_q_logic_vector
 
-add wave -radix binary -label CLOCK /de0_lite_vhd/reg3232_vhd/CLOCK
-add wave -radix hex -label DATA /de0_lite_vhd/reg3232_vhd/DATA
-add wave -radix dec -label WRITE_ADDRESS /de0_lite_vhd/reg3232_vhd/WRITE_ADDRESS
-add wave -radix dec -label READ_ADDRESS /de0_lite_vhd/reg3232_vhd/READ_ADDRESS
-add wave -radix binary -label WE /de0_lite_vhd/reg3232_vhd/WE
-add wave -radix hex -label Q /de0_lite_vhd/reg3232_vhd/Q
+add wave -radix binary -label CLOCK /de0_lite_vhd/sram3232_vhd/CLOCK
+add wave -radix hex -label DATA /de0_lite_vhd/sram3232_vhd/DATA
+add wave -radix dec -label WRITE_ADDRESS /de0_lite_vhd/sram3232_vhd/WRITE_ADDRESS
+add wave -radix dec -label READ_ADDRESS /de0_lite_vhd/sram3232_vhd/READ_ADDRESS
+add wave -radix binary -label WE /de0_lite_vhd/sram3232_vhd/WE
+add wave -radix hex -label Q /de0_lite_vhd/sram3232_vhd/Q
 
 #------------------------------------------------------------------------------------------
 #REG32n
-#add wave -radix binary -label reg32n_clock_logic /de0_lite_vhd/reg32n_clock_logic
-#add wave -radix hex -label reg32n_data_logic_vector /de0_lite_vhd/reg32n_data_logic_vector
-#add wave -radix dec -label reg32n_write_address_integer /de0_lite_vhd/reg32n_write_address_integer
-#add wave -radix dec -label reg32n_read_address_integer /de0_lite_vhd/reg32n_read_address_integer
-#add wave -radix binary -label reg32n_we_logic /de0_lite_vhd/reg32n_we_logic
-#add wave -radix hex -label reg32n_q_logic_vector /de0_lite_vhd/reg32n_q_logic_vector
+#add wave -radix binary -label sram32n_clock_logic /de0_lite_vhd/sram32n_clock_logic
+#add wave -radix hex -label sram32n_data_logic_vector /de0_lite_vhd/sram32n_data_logic_vector
+#add wave -radix dec -label sram32n_write_address_integer /de0_lite_vhd/sram32n_write_address_integer
+#add wave -radix dec -label sram32n_read_address_integer /de0_lite_vhd/sram32n_read_address_integer
+#add wave -radix binary -label sram32n_we_logic /de0_lite_vhd/sram32n_we_logic
+#add wave -radix hex -label sram32n_q_logic_vector /de0_lite_vhd/sram32n_q_logic_vector
 
-#add wave -radix binary -label CLOCK /de0_lite_vhd/reg32n_vhd/CLOCK
-#add wave -radix hex -label DATA /de0_lite_vhd/reg32n_vhd/DATA
-#add wave -radix dec -label WRITE_ADDRESS /de0_lite_vhd/reg32n_vhd/WRITE_ADDRESS
-#add wave -radix dec -label READ_ADDRESS /de0_lite_vhd/reg32n_vhd/READ_ADDRESS
-#add wave -radix binary -label WE /de0_lite_vhd/reg32n_vhd/WE
-#add wave -radix hex -label Q /de0_lite_vhd/reg32n_vhd/Q
+#add wave -radix binary -label CLOCK /de0_lite_vhd/sram32n_vhd/CLOCK
+#add wave -radix hex -label DATA /de0_lite_vhd/sram32n_vhd/DATA
+#add wave -radix dec -label WRITE_ADDRESS /de0_lite_vhd/sram32n_vhd/WRITE_ADDRESS
+#add wave -radix dec -label READ_ADDRESS /de0_lite_vhd/sram32n_vhd/READ_ADDRESS
+#add wave -radix binary -label WE /de0_lite_vhd/sram32n_vhd/WE
+#add wave -radix hex -label Q /de0_lite_vhd/sram32n_vhd/Q
 
 #------------------------------------------------------------------------------------------
 #SEVENSEG

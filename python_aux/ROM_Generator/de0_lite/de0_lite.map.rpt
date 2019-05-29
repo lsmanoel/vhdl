@@ -1,0 +1,225 @@
+Analysis & Synthesis report for de0_lite
+Sat May 25 21:36:02 2019
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Sat May 25 21:36:02 2019          ;
+; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
+; Revision Name                      ; de0_lite                                   ;
+; Top-level Entity Name              ; de0_lite                                   ;
+; Family                             ; MAX 10                                     ;
+; Total logic elements               ; N/A until Partition Merge                  ;
+;     Total combinational functions  ; N/A until Partition Merge                  ;
+;     Dedicated logic registers      ; N/A until Partition Merge                  ;
+; Total registers                    ; N/A until Partition Merge                  ;
+; Total pins                         ; N/A until Partition Merge                  ;
+; Total virtual pins                 ; N/A until Partition Merge                  ;
+; Total memory bits                  ; N/A until Partition Merge                  ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
+; Total PLLs                         ; N/A until Partition Merge                  ;
+; UFM blocks                         ; N/A until Partition Merge                  ;
+; ADC blocks                         ; N/A until Partition Merge                  ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                                      ; de0_lite           ; de0_lite           ;
+; Family name                                                                ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+    Info: Processing started: Sat May 25 21:35:47 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off de0_lite -c de0_lite
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Warning (12019): Can't analyze file -- file sevenSeg.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file de0_lite.vhd
+    Info (12022): Found design unit 1: de0_lite-rtl
+    Info (12023): Found entity 1: de0_lite
+Info (12127): Elaborating entity "de0_lite" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(22): used implicit default value for signal "DRAM_ADDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(23): used implicit default value for signal "DRAM_BA" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(24): used implicit default value for signal "DRAM_CAS_N" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(25): used implicit default value for signal "DRAM_CKE" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(26): used implicit default value for signal "DRAM_CLK" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(27): used implicit default value for signal "DRAM_CS_N" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(29): used implicit default value for signal "DRAM_LDQM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(30): used implicit default value for signal "DRAM_RAS_N" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(31): used implicit default value for signal "DRAM_UDQM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(32): used implicit default value for signal "RAM_WE_N" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(52): used implicit default value for signal "VGA_B" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(53): used implicit default value for signal "VGA_G" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(54): used implicit default value for signal "VGA_HS" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(55): used implicit default value for signal "VGA_R" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(56): used implicit default value for signal "VGA_VS" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(59): used implicit default value for signal "GSENSOR_CS_N" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(61): used implicit default value for signal "GSENSOR_SCLK" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(87): object "rom3232_q_integer" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(103): object "sync_rom_address_integer" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(107): object "sync_rom_data_out_integer" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(126): object "reg3232_data_integer" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(140): object "reg3232_q_integer" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(162): object "reg32n_data_integer" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(176): object "reg32n_q_integer" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(204): object "sevenSeg_dot_logic_vector" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(247): object "sevenSegROM_q_integer_array" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(251): object "sevenSegROM_notq_integer_array" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(271): object "mixerN2_input_0_integer" assigned a value but never read
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(273): used implicit default value for signal "mixerN2_input_0_logic_vector" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(275): object "mixerN2_input_1_integer" assigned a value but never read
+Warning (10541): VHDL Signal Declaration warning at de0_lite.vhd(277): used implicit default value for signal "mixerN2_input_1_logic_vector" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(279): object "mixerN2_q_integer" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(300): object "mixerN3_input_0_integer" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(304): object "mixerN3_input_1_integer" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(308): object "mixerN3_input_2_integer" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at de0_lite.vhd(312): object "mixerN3_q_integer" assigned a value but never read
+Warning (10873): Using initial value X (don't care) for net "sevenSegROM_data_logic_vector_array[5..2]" at de0_lite.vhd(245)
+Warning (10873): Using initial value X (don't care) for net "mixerN3_input_1_logic_vector[9..6]" at de0_lite.vhd(306)
+Warning (12125): Using design file sevenSegROM.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: sevenSegROM-rtl
+    Info (12023): Found entity 1: sevenSegROM
+Info (12128): Elaborating entity "sevenSegROM" for hierarchy "sevenSegROM:\hex_display_array:5:sevenSegROM_vhd"
+Error (12006): Node instance "rom3232_vhd" instantiates undefined entity "rom3232" File: /home/lucas/vhdl/python_aux/ROM_Generator/de0_lite/de0_lite.vhd Line: 318
+Error (12006): Node instance "sync_rom_vhd" instantiates undefined entity "sync_rom" File: /home/lucas/vhdl/python_aux/ROM_Generator/de0_lite/de0_lite.vhd Line: 332
+Error (12006): Node instance "reg3232_vhd" instantiates undefined entity "reg3232" File: /home/lucas/vhdl/python_aux/ROM_Generator/de0_lite/de0_lite.vhd Line: 346
+Error (12006): Node instance "reg32n_vhd" instantiates undefined entity "reg32n" File: /home/lucas/vhdl/python_aux/ROM_Generator/de0_lite/de0_lite.vhd Line: 368
+Error (12006): Node instance "mixerN2_vhd" instantiates undefined entity "mixerN2" File: /home/lucas/vhdl/python_aux/ROM_Generator/de0_lite/de0_lite.vhd Line: 434
+Error (12006): Node instance "mixerN3_vhd" instantiates undefined entity "mixerN3" File: /home/lucas/vhdl/python_aux/ROM_Generator/de0_lite/de0_lite.vhd Line: 455
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 6 errors, 41 warnings
+    Error: Peak virtual memory: 971 megabytes
+    Error: Processing ended: Sat May 25 21:36:02 2019
+    Error: Elapsed time: 00:00:15
+    Error: Total CPU time (on all processors): 00:00:35
+
+

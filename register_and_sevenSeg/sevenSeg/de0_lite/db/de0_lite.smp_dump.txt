@@ -1,0 +1,7 @@
+
+State Machine - |de0_lite|sevenSegArray:sevenSegArray_vhd|hex2dig:hex2dig_vhd|main_state
+Name main_state.END_STATE main_state.COMPARE_STATE main_state.DIVIDE_STATE main_state.START_STATE 
+main_state.START_STATE 0 0 0 0 
+main_state.DIVIDE_STATE 0 0 1 1 
+main_state.COMPARE_STATE 0 1 0 1 
+main_state.END_STATE 1 0 0 1 

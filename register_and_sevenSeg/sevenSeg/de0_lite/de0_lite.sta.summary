@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'MAX10_CLK1_50'
+Slack : -0.985
+TNS   : -4.251
+
+Type  : Slow 1200mV 85C Model Hold 'MAX10_CLK1_50'
+Slack : 0.406
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : -3.000
+TNS   : -17.110
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sevenSegArray:sevenSegArray_vhd|hex2dig:hex2dig_vhd|main_state.DIVIDE_STATE'
+Slack : 0.421
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'MAX10_CLK1_50'
+Slack : -0.869
+TNS   : -3.618
+
+Type  : Slow 1200mV 0C Model Hold 'MAX10_CLK1_50'
+Slack : 0.365
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : -3.000
+TNS   : -15.870
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sevenSegArray:sevenSegArray_vhd|hex2dig:hex2dig_vhd|main_state.DIVIDE_STATE'
+Slack : 0.465
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'MAX10_CLK1_50'
+Slack : -0.319
+TNS   : -1.166
+
+Type  : Fast 1200mV 0C Model Hold 'MAX10_CLK1_50'
+Slack : 0.164
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
+Slack : -3.000
+TNS   : -17.457
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sevenSegArray:sevenSegArray_vhd|hex2dig:hex2dig_vhd|main_state.DIVIDE_STATE'
+Slack : 0.413
+TNS   : 0.000
+
+------------------------------------------------------------

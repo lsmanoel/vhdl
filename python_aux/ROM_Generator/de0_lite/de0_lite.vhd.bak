@@ -1,0 +1,144 @@
+-------------------------------------------------------------------
+-- Name        : de0_lite.vhd
+-- Author      : Lucas Seara Manoel
+-- Version     : 0.1
+-- Copyright   : Departamento de Eletrônica, Florianópolis, IFSC
+-- Description : Projeto base DE10-Lite
+-- License MIT
+-------------------------------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.all;
+
+entity de0_lite is 
+	port (
+		---------- CLOCK ----------
+		ADC_CLK_10:			in std_logic;
+		MAX10_CLK1_50:		in std_logic;
+		MAX10_CLK2_50:		in std_logic;
+		
+		----------- SDRAM ------------
+		DRAM_ADDR:	 		out std_logic_vector (12 downto 0);
+		DRAM_BA:	 		out std_logic_vector (1 downto 0);
+		DRAM_CAS_N:	 		out std_logic;
+		DRAM_CKE:	 		out std_logic;
+		DRAM_CLK:	 		out std_logic;
+		DRAM_CS_N:	 		out std_logic;		
+		DRAM_DQ:	 		inout std_logic_vector(15 downto 0);
+		DRAM_LDQM:	 		out std_logic;
+		DRAM_RAS_N:	 		out std_logic;
+		DRAM_UDQM:	 		out std_logic;
+		RAM_WE_N:	 		out std_logic;
+		
+		----------- SEG7 ------------
+		HEX0:		 		out std_logic_vector(7 downto 0);
+		HEX1:		 		out std_logic_vector(7 downto 0);
+		HEX2:		 		out std_logic_vector(7 downto 0);
+		HEX3:		 		out std_logic_vector(7 downto 0);
+		HEX4:		 		out std_logic_vector(7 downto 0);
+		HEX5:		 		out std_logic_vector(7 downto 0);
+
+		----------- KEY ------------
+		KEY: 				in std_logic_vector(1 downto 0);
+
+		----------- LED ------------
+		LEDR: 				out std_logic_vector(9 downto 0);
+
+		----------- SW ------------
+		SW: 				in std_logic_vector(9 downto 0);
+
+		----------- VGA ------------
+		VGA_B:				out std_logic_vector(3 downto 0);
+		VGA_G:				out std_logic_vector(3 downto 0);
+		VGA_HS:				out std_logic;
+		VGA_R:				out std_logic_vector(3 downto 0);
+		VGA_VS:				out std_logic;
+	
+		----------- Accelerometer ------------
+		GSENSOR_CS_N:		out std_logic;
+		GSENSOR_INT:		in std_logic_vector(2 downto 1);
+		GSENSOR_SCLK:		out std_logic;
+		GSENSOR_SDI:		inout std_logic;
+		GSENSOR_SDO:		inout std_logic;
+	
+		----------- Arduino ------------
+		ARDUINO_IO:			inout std_logic_vector(15 downto 0);
+		ARDUINO_RESET_N:	inout std_logic
+	);
+end entity;
+
+architecture rtl of de0_lite is	
+	-------------------------------------------------------------------	
+	component sevenSeg is
+	    generic (DISPLAY_MODE:			std_logic);
+		port 	(SEG_IN:				in std_logic_vector (3  downto 0);
+		 		 SEG_OUT:				out std_logic_vector (7 downto 0);
+		 		 LOAD_DATA:				in std_logic);   	
+	end component;
+
+	signal sevenSeg_1_displayMode: 		std_logic;
+	signal sevenSeg_1_seg_in:			std_logic_vector (3  downto 0);
+	signal sevenSeg_1_seg_out:			std_logic_vector (7 downto 0);
+	signal sevenSeg_1_load_data:		std_logic; 
+
+	signal sevenSeg_2_displayMode: 		std_logic;
+	signal sevenSeg_2_seg_in:			std_logic_vector (3  downto 0);
+	signal sevenSeg_2_seg_out:			std_logic_vector (7 downto 0);
+	signal sevenSeg_2_load_data:		std_logic; 
+
+	-------------------------------------------------------------------
+	component reg3232 is
+		port (INPUT_DATA_ARRAY: 		in std_logic_vector 	(31 downto 0);
+			  OUTPUT_DATA_ARRAY: 		out std_logic_vector 	(31 downto 0);
+			  REG_ADDR: 				in std_logic_vector 	(31 downto 0);
+			  LOAD_DATA:				in std_logic);	
+	end component;
+
+	signal reg3232_input_data_array: 	std_logic_vector		(31 downto 0);
+	signal reg3232_output_data_array:	std_logic_vector		(31 downto 0);
+	signal reg3232_reg_addr:			std_logic_vector		(31 downto 0);
+	signal reg3232_load_data:			std_logic;
+	
+
+begin
+	-------------------------------------------------------------------
+	display_1: 			sevenSeg 
+		generic map (DISPLAY_MODE			=> sevenSeg_1_displayMode);
+		port map	(SEG_IN					=> sevenSeg_1_seg_in;
+					 SEG_OUT				=> sevenSeg_1_seg_out;
+					 LOAD_DATA				=> sevenSeg_1_load_data);
+
+	sevenSeg_1_displayMode					<= '0';
+	sevenSeg_1_seg_in						<= Std_logic_vector(To_unsigned(2, 32));
+	HEX0									<= sevenSeg_1_seg_out;
+	sevenSeg_1_load_data					<= MAX10_CLK1_50;
+
+
+	-------------------------------------------------------------------
+	register3232_1: 	reg3232 
+		port map	(INPUT_DATA_ARRAY		=> reg3232_input_data_array; 
+					 OUTPUT_DATA_ARRAY		=> reg3232_output_data_array; 
+					 REG_ADDR				=> reg3232_reg_addr;
+					 LOAD_DATA				=> reg3232_load_data);
+
+	reg3232_input_data_array(3 downto 0) 	<= sevenSeg_1_seg_in;
+	reg3232_reg_addr						<= Std_logic_vector(To_unsigned(2, 32));
+	reg3232_load_data						<= MAX10_CLK1_50;
+	-------------------------------------------------------------------
+	display_1_mirror: 	sevenSeg 
+		generic map (DISPLAY_MODE			=> sevenSeg_2_displayMode);
+		port map	(SEG_IN					=> sevenSeg_2_seg_in;
+					 SEG_OUT				=> sevenSeg_2_seg_out;
+					 LOAD_DATA				=> sevenSeg_2_load_data);
+
+	sevenSeg_2_displayMode					<= '0';
+	sevenSeg_2_seg_in						<= reg3232_output_data_array(3 downto 0);
+	HEX0 									<= sevenSeg_2_seg_out;
+	sevenSeg_2_load_data					<= MAX10_CLK1_50;
+
+	-------------------------------------------------------------------
+	value_reg_out <= To_integer(Unsigned(output_data_array));									 
+end;
+
+
